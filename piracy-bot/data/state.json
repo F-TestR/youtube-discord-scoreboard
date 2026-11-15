@@ -1,16 +1,11 @@
 {
- "board_id": "dry-3",
- "last_run": "2026-11-15T17:28:37Z",
+ "board_id": "1571587973722415238",
+ "grouping_version": 2,
+ "last_run": "2026-11-15T18:09:30Z",
  "last_views": {
   "_members": 7.0,
   "tt:2026-11-15-cannon-to-the-kraken-cutscene": 18.0,
-  "yt:8d1S91JBhIc": 1189.0,
-  "yt:G1ODiIrd6Yc": 1040.0,
-  "yt:Thxs9ZZ0VD8": 1217.0,
-  "yt:WCSBS7Qnhqo": 706.0,
-  "yt:mgEgzM7NYPE": 807.0,
-  "yt:okWQQrn54U8": 1460.0,
-  "yt:q-DOMwfoemw": 1189.0
+  "yt:Thxs9ZZ0VD8": 1217.0
  },
  "platform_of": {
   "tt:2026-11-15-cannon-to-the-kraken-cutscene": "TikTok",
@@ -1300,104 +1295,19 @@
   "yt:q-DOMwfoemw": {}
  },
  "started": "2026-11-15T17:28:37Z",
+ "took_off": [],
  "video_of": {
   "tt:2026-11-15-cannon-to-the-kraken-cutscene": "V00",
-  "yt:8d1S91JBhIc": "V04",
-  "yt:G1ODiIrd6Yc": "V02",
-  "yt:Thxs9ZZ0VD8": "V06",
-  "yt:WCSBS7Qnhqo": "V03",
-  "yt:mgEgzM7NYPE": "V00",
-  "yt:okWQQrn54U8": "V05",
-  "yt:q-DOMwfoemw": "V01"
+  "yt:Thxs9ZZ0VD8": "V00"
  },
  "videos": {
   "V00": {
-   "first_posted": "2025-06-12T01:35:30Z",
+   "first_posted": "2026-11-15T02:48:26Z",
    "format": "Cinematic",
-   "title": "IF FLEXING WAS A WEAPON...",
+   "title": "Cannon to the Kraken (cutscene)",
    "words": [
     "cannon",
     "cutscene",
-    "flexing",
-    "fypage",
-    "gaming",
-    "kraken",
-    "robloxedit",
-    "viral",
-    "vsgorilla",
-    "weapon"
-   ]
-  },
-  "V01": {
-   "first_posted": "2025-06-14T23:41:55Z",
-   "format": null,
-   "title": "POV: CHIMPANZINI BANANINI",
-   "words": [
-    "bananini",
-    "chimpanzini",
-    "fypage",
-    "memes",
-    "robloxedit",
-    "robux",
-    "vsgorilla"
-   ]
-  },
-  "V02": {
-   "first_posted": "2025-06-19T05:10:38Z",
-   "format": null,
-   "title": "100 VS Gorilla Coming soon... Would you play? (LINK IN BI…",
-   "words": [
-    "bio",
-    "coming",
-    "gorilla",
-    "link",
-    "play",
-    "robloxfyp",
-    "soon",
-    "would"
-   ]
-  },
-  "V03": {
-   "first_posted": "2025-06-22T23:39:11Z",
-   "format": null,
-   "title": "Is this the most fun game on Roblox....(LINK IN BIO)",
-   "words": [
-    "bio",
-    "fun",
-    "link",
-    "most",
-    "vsgorilla"
-   ]
-  },
-  "V04": {
-   "first_posted": "2026-09-20T21:18:15Z",
-   "format": null,
-   "title": "CLEAN THE SKYSCRAPER! OUT NOW",
-   "words": [
-    "clean",
-    "now",
-    "skyscraper"
-   ]
-  },
-  "V05": {
-   "first_posted": "2026-09-20T23:35:36Z",
-   "format": null,
-   "title": "Me at my grown age cleaning windows on Roblox...",
-   "words": [
-    "age",
-    "cleaning",
-    "cleantheskyscraper",
-    "grown",
-    "viral",
-    "windows"
-   ]
-  },
-  "V06": {
-   "first_posted": "2026-11-15T02:48:26Z",
-   "format": "Gameplay",
-   "title": "They fired me out of a cannon at a KRAKEN",
-   "words": [
-    "cannon",
     "fired",
     "kraken"
    ]
