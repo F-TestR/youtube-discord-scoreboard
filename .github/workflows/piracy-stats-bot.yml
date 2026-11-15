@@ -30,6 +30,7 @@ jobs:
       - name: Run the bot
         env:
           DISCORD_STATS_WEBHOOK: ${{ secrets.DISCORD_STATS_WEBHOOK }}
+          DISCORD_TABS_WEBHOOK: ${{ secrets.DISCORD_TABS_WEBHOOK }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
