@@ -1,0 +1,59 @@
+# PIRACY stats bot: collects the numbers every 3 hours and keeps Discord up to date.
+# Also runs straight away when someone edits piracy-bot/manual/ or piracy-bot/config.json,
+# or when you press "Run workflow" on the Actions tab.
+name: PIRACY stats bot
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "piracy-bot/manual/**"
+      - "piracy-bot/config.json"
+
+permissions:
+  contents: write   # the bot saves its memory in piracy-bot/data
+
+concurrency:
+  group: piracy-stats-bot
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run the bot
+        env:
+          DISCORD_STATS_WEBHOOK: ${{ secrets.DISCORD_STATS_WEBHOOK }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          GH_SECRETS_PAT: ${{ secrets.GH_SECRETS_PAT }}
+        run: |
+          if [ -n "$GH_SECRETS_PAT" ]; then export IG_TOKEN_OUT="$RUNNER_TEMP/ig_token"; fi
+          python piracy-bot/bot.py
+
+      - name: Store a renewed Instagram token
+        env:
+          GH_TOKEN: ${{ secrets.GH_SECRETS_PAT }}
+        run: |
+          if [ -n "$GH_TOKEN" ] && [ -f "$RUNNER_TEMP/ig_token" ]; then
+            gh secret set INSTAGRAM_TOKEN --repo "$GITHUB_REPOSITORY" < "$RUNNER_TEMP/ig_token"
+            rm -f "$RUNNER_TEMP/ig_token"
+          fi
+
+      - name: Save the bot's memory
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add piracy-bot/data
+          git diff --cached --quiet || git commit -q -m "Stats bot update [skip ci]"
+          git pull -q --rebase && git push -q
