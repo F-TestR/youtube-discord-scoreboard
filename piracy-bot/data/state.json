@@ -1,7 +1,11 @@
 {
- "board_id": "1571587973722415238",
+ "board_id": "1571592035369222409",
  "grouping_version": 2,
- "last_run": "2026-11-15T18:09:30Z",
+ "hook_info": {
+  "channel_id": "1571566241494335548",
+  "guild_id": "1562793205953462303"
+ },
+ "last_run": "2026-11-15T18:25:38Z",
  "last_views": {
   "_members": 7.0,
   "tt:2026-11-15-cannon-to-the-kraken-cutscene": 18.0,
@@ -1295,6 +1299,20 @@
   "yt:q-DOMwfoemw": {}
  },
  "started": "2026-11-15T17:28:37Z",
+ "tabs": {
+  "Instagram Reels": {
+   "message": "1571592034001883221",
+   "thread": "1571592034001883221"
+  },
+  "TikTok": {
+   "message": "1571592032659439700",
+   "thread": "1571592032659439700"
+  },
+  "YouTube Shorts": {
+   "message": "1571592033578000476",
+   "thread": "1571592033578000476"
+  }
+ },
  "took_off": [],
  "video_of": {
   "tt:2026-11-15-cannon-to-the-kraken-cutscene": "V00",
