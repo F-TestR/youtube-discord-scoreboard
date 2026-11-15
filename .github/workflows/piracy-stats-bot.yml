@@ -1,6 +1,7 @@
 # PIRACY stats bot: collects the numbers every 3 hours and keeps Discord up to date.
 # Also runs straight away when someone edits piracy-bot/manual/ or piracy-bot/config.json,
-# or when you press "Run workflow" on the Actions tab.
+# or when you press "Run workflow" on the Actions tab. (Use that button, not "Re-run" on an
+# old run: a re-run uses the files as they were back then.)
 name: PIRACY stats bot
 
 on:
@@ -24,11 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
+      - uses: actions/checkout@v5
 
       - name: Run the bot
         env:
@@ -39,7 +36,7 @@ jobs:
           GH_SECRETS_PAT: ${{ secrets.GH_SECRETS_PAT }}
         run: |
           if [ -n "$GH_SECRETS_PAT" ]; then export IG_TOKEN_OUT="$RUNNER_TEMP/ig_token"; fi
-          python piracy-bot/bot.py
+          python3 piracy-bot/bot.py
 
       - name: Store a renewed Instagram token
         env:
@@ -55,5 +52,15 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
           git add piracy-bot/data
-          git diff --cached --quiet || git commit -q -m "Stats bot update [skip ci]"
-          git pull -q --rebase && git push -q
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -q -m "Stats bot update [skip ci]"
+          # if the repo changed meanwhile, keep this run's numbers and try again
+          for attempt in 1 2 3; do
+            if git pull -q --rebase -X theirs origin "$GITHUB_REF_NAME" && git push -q origin "HEAD:$GITHUB_REF_NAME"; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep 5
+          done
+          echo "Couldn't save the bot's memory to the repo."
+          exit 1
