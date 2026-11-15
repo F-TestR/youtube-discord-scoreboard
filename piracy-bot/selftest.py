@@ -40,7 +40,7 @@ def fake_http(method, url, params=None, body=None, headers=None, tries=4):
     now, params = NOW[0], params or {}
     if "discord.com/api/webhooks" in url:
         SENT.append({"method": method, "url": url.split("?")[0][-30:], "body": body})
-        return {"id": f"msg{len(SENT)}"} if method == "POST" else {}
+        return {"id": str(10**18 + len(SENT))} if method == "POST" else {}
     if url.endswith("/channels"):
         return {"items": [{"id": "UCpiracy000000000000000", "contentDetails": {"relatedPlaylists": {"uploads": "UUpiracy"}}}]}
     if url.endswith("/playlistItems"):

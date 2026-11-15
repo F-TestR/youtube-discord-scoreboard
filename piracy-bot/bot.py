@@ -380,6 +380,8 @@ def main():
     for m in messages:
         D.send(webhook, m)
     board_id = state.get("board_id")
+    if not str(board_id or "").isdigit():      # e.g. left over from a run without the webhook
+        board_id = None
     if not (board_id and D.edit(webhook, board_id, board)):
         state["board_id"] = D.send(webhook, board)
 
@@ -389,7 +391,11 @@ def main():
     if members is not None:
         state["last_views"]["_members"] = members
     state["last_run"] = sources.iso(now)
-    save(DATA / "state.json", state)
+    if D.OUTBOX is None:
+        save(DATA / "state.json", state)
+    else:
+        print("Dry run (no DISCORD_STATS_WEBHOOK, or DRY_RUN=1): messages are in data/outbox.json "
+              "and the bot's memory was not changed.")
     save(DATA / "posts.json", {"rows": rows, "meta": [
         {"label": "Made by", "value": "PIRACY stats bot (bot.py)"},
         {"label": "Updated", "value": sources.iso(now)}]})

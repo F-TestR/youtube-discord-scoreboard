@@ -32,7 +32,7 @@ def edit(webhook, message_id, embeds):
         sources.http("PATCH", f"{webhook}/messages/{message_id}", body=body)
         return True
     except sources.HTTPError as e:
-        if e.status in (404, 403):
+        if e.status in (400, 403, 404):   # gone, or not a message this webhook can edit
             return False
         raise
 
