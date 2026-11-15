@@ -401,9 +401,27 @@ def main():
         print("  problem:", p)
 
 
+def report_crash():
+    """Tell the Discord channel the run failed, with any secrets blanked out."""
+    text = traceback.format_exc()
+    for key in ("DISCORD_STATS_WEBHOOK", "YOUTUBE_API_KEY", "INSTAGRAM_TOKEN", "DISCORD_BOT_TOKEN", "GH_SECRETS_PAT"):
+        if os.environ.get(key):
+            text = text.replace(os.environ[key], "[hidden]")
+    last = [line for line in text.strip().splitlines() if line.strip()][-1][:300]
+    webhook = os.environ.get("DISCORD_STATS_WEBHOOK", "").strip()
+    if webhook and os.environ.get("DRY_RUN") != "1":
+        try:
+            sources.http("POST", webhook, body={"username": D.BOT_NAME, "allowed_mentions": {"parse": []}, "embeds": [{
+                "color": 0xDD2E44, "title": "The stats bot hit a problem",
+                "description": f"`{last}`\nThe full error is in GitHub → Actions → the failed run → run → Run the bot."}]})
+        except Exception:
+            pass
+
+
 if __name__ == "__main__":
     try:
         main()
     except Exception:
         traceback.print_exc()
+        report_crash()
         sys.exit(1)

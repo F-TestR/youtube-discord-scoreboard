@@ -12,7 +12,7 @@ OUTBOX = None          # a list in dry runs: messages are collected instead of s
 # ------------------------------------------------------------------ webhook
 def send(webhook, embeds, content=None):
     """Post a message; returns its id."""
-    body = {"username": BOT_NAME, "embeds": embeds, "allowed_mentions": {"parse": []}}
+    body = {"username": BOT_NAME, "embeds": tidy(embeds), "allowed_mentions": {"parse": []}}
     if content:
         body["content"] = content
     if OUTBOX is not None:
@@ -24,7 +24,7 @@ def send(webhook, embeds, content=None):
 
 def edit(webhook, message_id, embeds):
     """Edit a message the webhook sent before. False if it was deleted."""
-    body = {"embeds": embeds, "allowed_mentions": {"parse": []}}
+    body = {"embeds": tidy(embeds), "allowed_mentions": {"parse": []}}
     if OUTBOX is not None:
         OUTBOX.append({"action": "edit", "message_id": message_id, **body})
         return True
@@ -35,6 +35,15 @@ def edit(webhook, message_id, embeds):
         if e.status in (404, 403):
             return False
         raise
+
+
+def tidy(embeds):
+    """Discord refuses a message if any field name or value is empty."""
+    for e in embeds:
+        for f in e.get("fields", []):
+            f["name"] = (f.get("name") or "\u200b")[:256]
+            f["value"] = (f.get("value") or "\u200b")[:1024]
+    return embeds
 
 
 def size(e):
@@ -122,7 +131,7 @@ def scoreboard(rows, videos, last_views, members, notes, now, dashboard_url=None
         line = "  ·  ".join(parts)
         if last_views:
             line += f"   {change(total, before)}"
-        vfields.append({"name": f"{vid} · {info['title']}", "value": line})
+        vfields.append({"name": f"{vid} · {info['title']}", "value": line or "No numbers yet"})
     vids = {"color": COLOURS["videos"], "title": "Latest videos",
             "fields": vfields or [{"name": "​", "value": "No videos tracked yet."}]}
     right_now = {
