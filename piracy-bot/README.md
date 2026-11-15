@@ -10,8 +10,7 @@ Runs on GitHub Actions every 3 hours, for free, and keeps a Discord channel up t
   Roblox dev Shorts** right now.
 - **data/posts.json** in the analytics dashboard's format, so Claude can refresh the dashboard from it.
 
-Green ▲ means up and red ▼ means down. Colours show on Discord desktop and web; on phones the
-arrows and signs still show.
+Changes are marked 🟢 up, 🔴 down, 🆕 new and ⚪ no change, which show the same on desktop and phones.
 
 | Where | How it's read | Setup |
 | --- | --- | --- |

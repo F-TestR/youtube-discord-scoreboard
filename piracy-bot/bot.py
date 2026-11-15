@@ -38,7 +38,7 @@ METRICS = ["views", "likes", "comments", "shares", "saves", "follows", "avg_watc
            "full_watch_pct", "skip_rate", "reach"]
 FORMAT_WORDS = {
     "Cinematic": ["cutscene", "cinematic", "trailer", "teaser", "intro", "opening"],
-    "Gameplay": ["gameplay", "battle", "combat", "fight", "storm", "sailing", "pvp", "cannon", "raid", "boss"],
+    "Gameplay": ["gameplay", "battle", "combat", "fight", "storm", "sailing", "pvp", "raid", "boss"],
     "Devlog / behind the scenes": ["devlog", "update", "behind", "making", "how we", "progress", "wip"],
 }
 STOP = scanner.STOP | {"pov", "your", "when", "crew", "plan", "was", "you", "they", "out"}
@@ -85,18 +85,32 @@ def label_hours(label):
 
 
 # ------------------------------------------------------------------ grouping clips
+GROUPING_VERSION = 2
+
+
 def assign_videos(posts, state, links):
+    if state.get("grouping_version") != GROUPING_VERSION:
+        # earlier versions could give a typed-in video_id to a different clip: regroup once
+        state["video_of"], state["videos"] = {}, {}
+        state["grouping_version"] = GROUPING_VERSION
     video_of = state.setdefault("video_of", {})
     videos = state.setdefault("videos", {})
     taken = {(video_of[p["post_id"]], p["platform"]) for p in posts if p["post_id"] in video_of}
 
+    def override(p):
+        return links.get(p["post_id"]) or (links.get(p["url"]) if p.get("url") else None) or links.get(p["title"]) or {}
+
+    reserved = {override(p).get("video_id") or p.get("video_id") for p in posts} - {None, ""}
+
     def next_id():
-        ids = [int(v[1:]) for v in videos if re.fullmatch(r"V\d+", v)]
+        ids = [int(v[1:]) for v in set(videos) | reserved if re.fullmatch(r"V\d+", v)]
         return f"V{(max(ids) + 1) if ids else 0:02d}"
 
-    for p in sorted(posts, key=lambda p: p["posted"]):
+    # posts with a video_id typed in go first, so the other apps' copies can match them
+    ordered = sorted(posts, key=lambda p: (not (override(p).get("video_id") or p.get("video_id")), p["posted"]))
+    for p in ordered:
         pid = p["post_id"]
-        ov = links.get(pid) or (links.get(p["url"]) if p.get("url") else None) or links.get(p["title"]) or {}
+        ov = override(p)
         want = ov.get("video_id") or p.get("video_id")
         if want:
             video_of[pid] = want
@@ -312,7 +326,7 @@ def main():
                     took_off.add(pid)
         state["took_off"] = sorted(took_off)
         for (vid, hours), per in sorted(checkins.items()):
-            order = [n for n, _, _ in discord_report.PLATFORMS]
+            order = [n for n, _ in discord_report.PLATFORMS]
             per.sort(key=lambda x: order.index(x[0]))
             messages.append(D.check_in(vid, state["videos"][vid], hours, per, now))
 

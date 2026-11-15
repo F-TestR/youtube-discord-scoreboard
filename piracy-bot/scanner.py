@@ -10,7 +10,7 @@ import re
 import statistics
 
 import sources
-from discord_report import fmt_int
+from discord_report import COLOURS, fmt_short, tile
 
 STOP = set("""a an and are at be by for from how i in is it its me my of on or our so that the this to
 we with you your vs new roblox robloxdev dev devlog game games studio shorts short made making
@@ -69,23 +69,26 @@ def summary(store, now, days=14):
 
 def embed(s):
     if not s:
-        return {"color": 0xE8D49A, "title": "What's working: Roblox dev Shorts",
-                "description": "No scan data yet. The first scan runs on the next daily check."}
+        return {"color": COLOURS["scan"], "title": "What's working: Roblox dev Shorts",
+                "description": "No scan yet. It runs once a day with the YouTube key."}
     lines = []
     for i, r in enumerate(s["top"], 1):
         title = r["title"].replace("[", "(").replace("]", ")")[:70]
         lines.append(f"**{i}.** [{title}](https://www.youtube.com/shorts/{r['id']})\n"
-                     f"{r['channel']} · {r['duration_s']} s · {fmt_int(r['views'])} views "
-                     f"(~{fmt_int(r['per_day'])} a day)")
-    pattern = (f"The {min(20, s['count'])} fastest-growing run a median **{s['median_len_top']:.0f} s** "
-               f"(all {s['count']} scanned: {s['median_len_all']:.0f} s); "
-               f"{s['short_share']:.0%} are 30 s or shorter and {s['question_share']:.0%} ask a question in the title.")
+                     f"{r['channel']} · {r['duration_s']} s · {fmt_short(r['views'])} views · "
+                     f"~{fmt_short(r['per_day'])} a day")
+    k = min(20, s["count"])
+    fields = [
+        tile("Typical length", f"{s['median_len_top']:.0f} s", sub=f"fastest {k}"),
+        tile("30 s or shorter", f"{s['short_share']:.0%}", sub=f"of the fastest {k}"),
+        tile("Question in title", f"{s['question_share']:.0%}", sub=f"of the fastest {k}"),
+    ]
     if s["words"]:
-        pattern += " Common title words: " + ", ".join(s["words"]) + "."
+        fields.append({"name": "Common title words", "value": ", ".join(s["words"])})
     return {
-        "color": 0xE8D49A,
+        "color": COLOURS["scan"],
         "title": "What's working: Roblox dev Shorts",
-        "description": "Fastest-growing Roblox dev Shorts from the last two weeks, by views per day.\n\n"
-                       + "\n".join(lines) + "\n\n" + pattern,
+        "description": "Fastest-growing from the last two weeks, by views per day.\n\n" + "\n\n".join(lines),
+        "fields": fields,
         "footer": {"text": "From YouTube search. TikTok can't be scanned automatically, but most devs post the same clips to both."},
     }
