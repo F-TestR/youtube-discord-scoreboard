@@ -123,12 +123,19 @@ def youtube_channel(key, channel):
     return items[0]["id"], items[0]["contentDetails"]["relatedPlaylists"]["uploads"]
 
 
-def youtube_posts(key, channel, shorts_max_s=180, max_videos=50):
-    """Our own Shorts: newest uploads with their public counts."""
+def youtube_posts(key, channel, shorts_max_s=180, max_videos=200):
+    """Our own Shorts: up to 200 newest uploads with their public counts."""
     channel_id, uploads = youtube_channel(key, channel)
-    r = http("GET", YT + "playlistItems", {"part": "contentDetails", "playlistId": uploads,
-                                           "maxResults": min(50, max_videos), "key": key})
-    ids = [i["contentDetails"]["videoId"] for i in (r or {}).get("items", [])]
+    ids, page = [], None
+    while len(ids) < max_videos:
+        p = {"part": "contentDetails", "playlistId": uploads, "maxResults": 50, "key": key}
+        if page:
+            p["pageToken"] = page
+        r = http("GET", YT + "playlistItems", p) or {}
+        ids += [i["contentDetails"]["videoId"] for i in r.get("items", [])]
+        page = r.get("nextPageToken")
+        if not page:
+            break
     posts = []
     for v in youtube_videos(key, ids):
         if v["duration_s"] is None or v["duration_s"] > shorts_max_s:

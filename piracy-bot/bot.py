@@ -209,7 +209,9 @@ def main():
     yt_key = os.environ.get("YOUTUBE_API_KEY", "").strip()
     ig_token = os.environ.get("INSTAGRAM_TOKEN", "").strip()
     bot_token = os.environ.get("DISCORD_BOT_TOKEN", "").strip()
+    tabs_hook = os.environ.get("DISCORD_TABS_WEBHOOK", "").strip()
     problems, notes, posts = [], [], []
+    failed = set()      # platforms whose numbers couldn't be read this run
 
     # ---- 1. collect
     yt_channel = (cfg.get("youtube") or {}).get("channel", "").strip()
@@ -221,6 +223,7 @@ def main():
             posts += got
         except Exception as e:
             problems.append(f"YouTube didn't answer: {e}")
+            failed.add("YouTube Shorts")
     elif not yt_key:
         problems.append("YouTube isn't connected yet: add the YOUTUBE_API_KEY secret (setup step 2).")
     else:
@@ -231,6 +234,7 @@ def main():
             posts += sources.instagram_posts(ig_token, (cfg.get("instagram") or {}).get("api_version", "v24.0"))
         except Exception as e:
             problems.append(f"Instagram didn't answer: {e}")
+            failed.add("Instagram Reels")
         tok = state.setdefault("ig_token", {})
         h = hashlib.sha256(ig_token.encode()).hexdigest()[:12]
         if tok.get("hash") != h:
@@ -370,15 +374,66 @@ def main():
         elif age_d >= 1 and (h or 0) < 24:
             notes.append(f"**{vid} on {p['platform']}**: add its 24-hour numbers to manual/posts.csv.")
 
-    # ---- 6. scoreboard
-    board_notes = problems[:3] + notes[:3] + ([f"**Tip:** {recs[0]}"] if recs else [])
-    last = state.get("last_views") or {}
-    board = D.scoreboard(rows, videos, last if not first_run else {}, members, board_notes, now,
-                         cfg.get("dashboard_url") or None, cfg.get("run_every_hours", 3))
-
-    # ---- send everything, then remember it
+    # alerts and reports go out first
     for m in messages:
         D.send(webhook, m)
+
+    # ---- 6. posts that disappeared (made private or deleted) stop counting, with a note
+    last = state.get("last_views") or {}
+    current = {r["post_id"] for r in rows}
+    platform_of = state.get("platform_of", {})
+    gone = [pid for pid in last if not pid.startswith("_") and pid not in current
+            and platform_of.get(pid) not in failed]
+    if gone and not first_run:
+        by = {}
+        for pid in gone:
+            short = dict(discord_report.PLATFORMS).get(platform_of.get(pid), "other")
+            by[short] = by.get(short, 0) + 1
+        notes.insert(0, f"**{len(gone)} post{'s were' if len(gone) != 1 else ' was'} made private or deleted** "
+                        f"({', '.join(f'{v} on {k}' for k, v in by.items())}), so "
+                        f"{'they are' if len(gone) != 1 else 'it is'} no longer counted.")
+
+    # ---- 7. one tab per app: posts in a Discord forum channel, kept up to date
+    run_hours = cfg.get("run_every_hours", 3)
+    tab_links = {}
+    if tabs_hook:
+        try:
+            info = state.get("hook_info") or {}
+            if not info.get("channel_id") and webhook and D.OUTBOX is None:
+                r = sources.http("GET", webhook) or {}
+                info = {"guild_id": r.get("guild_id"), "channel_id": r.get("channel_id")}
+                state["hook_info"] = info
+            guild = info.get("guild_id") or (cfg.get("discord") or {}).get("guild_id")
+            board_id = state.get("board_id")
+            back = (f"https://discord.com/channels/{guild}/{info['channel_id']}/{board_id}"
+                    if guild and info.get("channel_id") and str(board_id or "").isdigit() else None)
+            empty = {
+                "TikTok": "No TikTok numbers yet. Add them to `piracy-bot/manual/posts.csv`, "
+                          "or send Claude the analytics screenshot.",
+                "YouTube Shorts": None if yt_key else "YouTube isn't connected yet (setup step 2).",
+                "Instagram Reels": None if ig_token else "Instagram isn't connected yet (setup step 4).",
+            }
+            tabs = state.setdefault("tabs", {})
+            for name, short in discord_report.PLATFORMS:
+                embeds = D.platform_tab(name, rows, {} if first_run else last, now, back, empty[name], run_hours)
+                t = tabs.get(name) or {}
+                if not (str(t.get("message") or "").isdigit()
+                        and D.edit(tabs_hook, t["message"], embeds, thread_id=t.get("thread"))):
+                    msg = D.send(tabs_hook, embeds, thread_name=D.TAB_NAMES[name], full=True)
+                    t = {"thread": msg.get("channel_id"), "message": msg.get("id")}
+                    tabs[name] = t
+                if guild and str(t.get("thread") or "").isdigit():
+                    tab_links[short] = f"https://discord.com/channels/{guild}/{t['thread']}"
+        except Exception as e:
+            problems.append("Couldn't update the tabs (DISCORD_TABS_WEBHOOK must be a webhook in a "
+                            f"forum channel): {str(e)[:150]}")
+
+    # ---- 8. scoreboard
+    board_notes = problems[:3] + notes[:3] + ([f"**Tip:** {recs[0]}"] if recs else [])
+    board = D.scoreboard(rows, videos, last if not first_run else {}, members, board_notes, now,
+                         cfg.get("dashboard_url") or None, run_hours, tab_links)
+
+    # ---- send the scoreboard, then remember everything
     board_id = state.get("board_id")
     if not str(board_id or "").isdigit():      # e.g. left over from a run without the webhook
         board_id = None
@@ -387,7 +442,8 @@ def main():
 
     state["started"] = state.get("started") or sources.iso(now)
     state["seen"] = sorted(seen | {p["post_id"] for p in posts})
-    state["last_views"] = {r["post_id"]: r["views"] for r in rows if r["views"] is not None}
+    kept = {pid: v for pid, v in last.items() if platform_of.get(pid) in failed}
+    state["last_views"] = {**kept, **{r["post_id"]: r["views"] for r in rows if r["views"] is not None}}
     if members is not None:
         state["last_views"]["_members"] = members
     state["last_run"] = sources.iso(now)
@@ -410,7 +466,8 @@ def main():
 def report_crash():
     """Tell the Discord channel the run failed, with any secrets blanked out."""
     text = traceback.format_exc()
-    for key in ("DISCORD_STATS_WEBHOOK", "YOUTUBE_API_KEY", "INSTAGRAM_TOKEN", "DISCORD_BOT_TOKEN", "GH_SECRETS_PAT"):
+    for key in ("DISCORD_STATS_WEBHOOK", "DISCORD_TABS_WEBHOOK", "YOUTUBE_API_KEY", "INSTAGRAM_TOKEN",
+                "DISCORD_BOT_TOKEN", "GH_SECRETS_PAT"):
         if os.environ.get(key):
             text = text.replace(os.environ[key], "[hidden]")
     last = [line for line in text.strip().splitlines() if line.strip()][-1][:300]

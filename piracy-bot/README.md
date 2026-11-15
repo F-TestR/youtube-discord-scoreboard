@@ -6,11 +6,13 @@ Runs on GitHub Actions every 3 hours, for free, and keeps a Discord channel up t
 - **24-hour and 7-day check-ins** for every clip, compared with your usual numbers at the same age.
 - **"Taking off" alerts** when a clip is beating your usual by 2× or more, so you can jump on it.
 - **A live scoreboard**: one message the bot keeps editing. Pin it.
+- **A tab for each app** (optional): TikTok, YouTube Shorts and Instagram Reels each get their own
+  page in a Discord forum channel, linked from the scoreboard.
 - **A Monday report** with what changed, **what to do next**, and **what's working in other
   Roblox dev Shorts** right now.
 - **data/posts.json** in the analytics dashboard's format, so Claude can refresh the dashboard from it.
 
-Changes are marked 🟢 up, 🔴 down, 🆕 new and ⚪ no change, which show the same on desktop and phones.
+Changes are marked 🟢 up, 🔴 down and 🆕 new, which show the same on desktop and phones.
 
 | Where | How it's read | Setup |
 | --- | --- | --- |
@@ -68,6 +70,12 @@ you the line to paste.
    message, the first report and the scoreboard. **Pin the scoreboard.** From then on it runs by
    itself every 3 hours.
 
+**Optional, a tab for each app:** create a **Forum** channel (for example `#stats-by-app`), then
+Edit Channel → Integrations → Webhooks → New Webhook → Copy Webhook URL. Add it as the secret
+`DISCORD_TABS_WEBHOOK`. On its next run the bot creates three posts in that forum (TikTok, YouTube
+Shorts, Instagram Reels), keeps them up to date, and links them from the scoreboard. Leave "Require
+tags" off in the forum's settings. If you delete a post, the bot makes a new one.
+
 **Optional, Discord joins per invite link:** in the Discord Developer Portal create an application
 → Bot → Reset Token and copy it. Invite the bot to the server with the **Manage Server** permission
 (Discord requires it to read invite counts). Add the secret `DISCORD_BOT_TOKEN`, and name your invite
@@ -82,6 +90,8 @@ joins per link for the past week.
   gameplay → Gameplay; devlog, update → Devlog). Set it yourself in the `format` column.
 - **"Your usual":** the middle value of your other posts on that app at the same age. It needs
   3 earlier posts on the app before it compares.
+- **Private or deleted videos** simply stop counting. They never show up as a drop, and the scoreboard
+  says once how many went.
 - **Recommendations** only appear once there's enough data (for example 3 gameplay and 3
   cinematic posts before it says which works better).
 - **Other devs' Shorts:** once a day it searches YouTube for recent Roblox dev Shorts (search words

@@ -3,33 +3,37 @@ import json
 import statistics
 
 import sources
-from discord_report import COLOURS, PLATFORMS, SHORT, change, fmt_int, fmt_pct, n, pad_row, stats, tile
+from discord_report import COLOURS, PLATFORMS, SHORT, change, fmt_date, fmt_int, fmt_pct, n, pad_row, stats, tile, wavg
 
 BOT_NAME = "PIRACY Stats"
 OUTBOX = None          # a list in dry runs: messages are collected instead of sent
 
 
 # ------------------------------------------------------------------ webhook
-def send(webhook, embeds, content=None):
-    """Post a message; returns its id."""
+def send(webhook, embeds, content=None, thread_name=None, full=False):
+    """Post a message; returns its id (or the whole message with full=True)."""
     body = {"username": BOT_NAME, "embeds": tidy(embeds), "allowed_mentions": {"parse": []}}
     if content:
         body["content"] = content
+    if thread_name:
+        body["thread_name"] = thread_name     # creates a new post in a forum channel
     if OUTBOX is not None:
         OUTBOX.append({"action": "post", **body})
-        return f"dry-{len(OUTBOX)}"
-    r = sources.http("POST", webhook + "?wait=true", body=body)
-    return (r or {}).get("id")
+        msg = {"id": f"dry-{len(OUTBOX)}", "channel_id": f"dry-{len(OUTBOX)}"}
+    else:
+        msg = sources.http("POST", webhook + "?wait=true", body=body) or {}
+    return msg if full else msg.get("id")
 
 
-def edit(webhook, message_id, embeds):
+def edit(webhook, message_id, embeds, thread_id=None):
     """Edit a message the webhook sent before. False if it was deleted."""
     body = {"embeds": tidy(embeds), "allowed_mentions": {"parse": []}}
     if OUTBOX is not None:
-        OUTBOX.append({"action": "edit", "message_id": message_id, **body})
+        OUTBOX.append({"action": "edit", "message_id": message_id, "thread_id": thread_id, **body})
         return True
+    url = f"{webhook}/messages/{message_id}" + (f"?thread_id={thread_id}" if thread_id else "")
     try:
-        sources.http("PATCH", f"{webhook}/messages/{message_id}", body=body)
+        sources.http("PATCH", url, body=body)
         return True
     except sources.HTTPError as e:
         if e.status in (400, 403, 404):   # gone, or not a message this webhook can edit
@@ -73,7 +77,7 @@ def vs_usual(value, usual):
         return "no comparison yet"
     r = value / usual
     if 0.9 <= r <= 1.1:
-        return "⚪ about your usual"
+        return "about your usual"
     return f"🟢 {r:.1f}× your usual" if r > 1 else f"🔴 {r:.1f}× your usual"
 
 
@@ -87,13 +91,13 @@ def ago(posted, now):
 
 
 # ------------------------------------------------------------------ live scoreboard
-def scoreboard(rows, videos, last_views, members, notes, now, dashboard_url=None, run_hours=3):
+def scoreboard(rows, videos, last_views, members, notes, now, dashboard_url=None, run_hours=3, tab_links=None):
     """The message the bot keeps editing."""
     logged = [r for r in rows if n(r.get("views")) is not None]
     week = [r for r in logged if (now - sources.parse_time(r["posted_at"])).days < 7]
     a, w = stats(logged), stats(week)
-    total_before = (sum(v for k, v in last_views.items() if not k.startswith("_") and v is not None)
-                    if last_views else None)
+    # only posts that are still public: a private or deleted video doesn't count as a drop
+    total_before = sum(last_views.get(r["post_id"], 0) or 0 for r in logged) if last_views else None
     fields = [
         tile("Views", fmt_int(w["views"])),
         tile("Follows", fmt_int(w["follows"])),
@@ -110,7 +114,9 @@ def scoreboard(rows, videos, last_views, members, notes, now, dashboard_url=None
         "author": {"name": "PIRACY · Live stats"},
         "title": "Scoreboard",
         "description": (f"Updated **{uk(sources.iso(now))}** UK time · refreshes every {run_hours} hours\n"
-                        "*Last 7 days, unless it says otherwise*"),
+                        + (("**Tabs:** " + "  ·  ".join(f"[{k}]({v})" for k, v in tab_links.items()) + "\n")
+                           if tab_links else "")
+                        + "*Last 7 days, unless it says otherwise*"),
         "fields": pad_row(fields),
     }
     if dashboard_url:
@@ -138,7 +144,7 @@ def scoreboard(rows, videos, last_views, members, notes, now, dashboard_url=None
         "color": COLOURS["notes"],
         "title": "Right now",
         "description": "\n".join(f"• {x}" for x in notes) if notes else "• Nothing needs attention.",
-        "footer": {"text": "🟢 up · 🔴 down · ⚪ no change · changes are since the last update"},
+        "footer": {"text": "🟢 up · 🔴 down · changes are since the last update"},
         "timestamp": sources.iso(now),
     }
     return [head, vids, right_now]
@@ -221,3 +227,59 @@ def dump_outbox(path):
     if OUTBOX is not None:
         with open(path, "w", encoding="utf-8") as f:
             json.dump(OUTBOX, f, ensure_ascii=False, indent=1)
+
+
+# ------------------------------------------------------------------ one tab per app (forum posts)
+TAB_NAMES = {"TikTok": "🎵 TikTok", "YouTube Shorts": "▶️ YouTube Shorts", "Instagram Reels": "📸 Instagram Reels"}
+TAB_COLOURS = {"TikTok": 0x25F4EE, "YouTube Shorts": 0xFF0033, "Instagram Reels": 0xD62976}
+
+
+def platform_tab(name, rows, last_views, now, back_link=None, empty_note=None, run_hours=3):
+    mine = [r for r in rows if r["platform"] == name and n(r.get("views")) is not None]
+    week = [r for r in mine if (now - sources.parse_time(r["posted_at"])).days < 7]
+    a, w = stats(mine), stats(week)
+    desc = f"Updated **{uk(sources.iso(now))}** UK time · refreshes every {run_hours} hours"
+    if back_link:
+        desc += f"\n[← Back to the scoreboard]({back_link})"
+    head = {"color": TAB_COLOURS[name], "author": {"name": "PIRACY · Live stats"},
+            "title": TAB_NAMES[name], "description": desc, "timestamp": sources.iso(now)}
+    if not mine:
+        head["description"] += "\n\n" + (empty_note or f"No {name} posts found yet.")
+        return [head]
+
+    before = sum(last_views.get(r["post_id"], 0) or 0 for r in mine) if last_views else None
+    fields = [
+        tile("Views (7 days)", fmt_int(w["views"])),
+        tile("Views (all time)", fmt_int(a["views"]), change(a["views"], before) if before is not None else ""),
+        tile("Posts", str(a["posts"]), sub=f"{fmt_int(a['avg_views'])} views each"),
+        tile("Engagement", fmt_pct(a["engagement_rate"])),
+        tile("Likes", fmt_int(a["likes"])),
+        tile("Comments", fmt_int(a["comments"])),
+    ]
+    for label, key in (("Shares", "shares"), ("Saves", "saves"), ("Follows", "follows")):
+        if a[key] is not None:
+            fields.append(tile(label, fmt_int(a[key])))
+    if a["full_watch_pct"] is not None:
+        fields.append(tile("Stayed to watch" if name == "YouTube Shorts" else "Full-watch", fmt_pct(a["full_watch_pct"])))
+    avg_watch = wavg(mine, "avg_watch_s")
+    if avg_watch is not None:
+        fields.append(tile("Average watch", f"{avg_watch:.1f} s"))
+    skips = [r["skip_rate"] for r in mine if r.get("skip_rate") is not None]
+    if skips:
+        fields.append(tile("Swiped away", fmt_pct(sum(skips) / len(skips)), sub="in the first seconds"))
+    head["fields"] = pad_row(fields)
+
+    pfields = []
+    for r in sorted(mine, key=lambda r: r["posted_at"], reverse=True)[:15]:
+        chg = change(n(r["views"]), last_views.get(r["post_id"])) if last_views else ""
+        st = stats([r])
+        line = f"**{fmt_int(st['views'])}** views  {chg}  ·  {fmt_pct(st['engagement_rate'])} eng".replace("  ·", " ·")
+        extra = [f"posted {fmt_date(r['posted'], False)}"]
+        if r.get("source") == "typed in" and r.get("snapshot") not in (None, "live"):
+            extra.append(f"numbers from {r['snapshot']}")
+        if r.get("url"):
+            extra.append(f"[Open]({r['url']})")
+        pfields.append({"name": f"{r['video_id']} · {r['video']}", "value": line + "\n" + " · ".join(extra)})
+    posts = {"color": TAB_COLOURS[name], "title": "Every post, newest first", "fields": pfields,
+             "footer": {"text": "🟢 up · 🔴 down · changes are since the last update"}}
+    return [head, posts]

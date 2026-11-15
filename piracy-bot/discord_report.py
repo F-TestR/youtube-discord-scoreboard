@@ -2,7 +2,7 @@
 
 Messages are built from Discord embed fields: small bold labels over normal-size
 values, laid out in columns. Changes use coloured markers that show on desktop
-and phones alike: 🟢 up, 🔴 down, 🆕 new, ⚪ no change.
+and phones alike: 🟢 up, 🔴 down, 🆕 new.
 """
 import datetime as dt
 
@@ -86,7 +86,7 @@ def fmt_date(iso, year=True):
 
 
 def change(cur, prev, kind="int", first=False):
-    """🟢 +340 / 🔴 −12 / 🆕 (new) / ⚪ no change. The sign carries the meaning too."""
+    """🟢 +340 / 🔴 −12 / 🆕 (new) / no change. The sign carries the meaning too."""
     if cur is None:
         return ""
     if first or prev is None:
@@ -95,7 +95,7 @@ def change(cur, prev, kind="int", first=False):
     if kind == "pts":
         d *= 100
     if abs(d) < (0.05 if kind == "pts" else 0.5):
-        return "⚪ no change"
+        return "*no change*"
     body = f"{abs(d):,.1f} pts" if kind == "pts" else f"{abs(d):,.0f}"
     return f"🟢 +{body}" if d > 0 else f"🔴 −{body}"
 
@@ -121,6 +121,18 @@ def build(posts, prev, dashboard_url=None, today=None):
     tot = stats(logged)
     ptot, pplat, ppost = prev.get("totals", {}), prev.get("platforms", {}), prev.get("posts", {})
     tiktok_full = wavg([r for r in logged if r.get("platform") == "TikTok"], "full_watch_pct")
+    prev_tiktok_full = prev.get("tiktok_full")
+    gone = [pid for pid in ppost if pid not in {r.get("post_id") for r in logged}]
+    if ppost:
+        # compare only posts that are still public, so a video made private or deleted
+        # doesn't show up as a drop
+        still = [r for r in logged if r.get("post_id") in ppost]
+        ptot = stats([ppost[r["post_id"]] for r in still])
+        ptot["videos"] = len({r.get("video_id") for r in still})
+        pplat = {name: stats([ppost[r["post_id"]] for r in still if r.get("platform") == name])
+                 for name, _ in PLATFORMS}
+        prev_tiktok_full = wavg([ppost[r["post_id"]] for r in still if r.get("platform") == "TikTok"],
+                                "full_watch_pct")
     top = max(logged, key=lambda r: n(r["views"]), default=None)
 
     # ---- 1. totals
@@ -139,7 +151,7 @@ def build(posts, prev, dashboard_url=None, today=None):
     ]
     if tiktok_full is not None:
         fields.append(tile("TikTok full-watch", fmt_pct(tiktok_full),
-                           change(tiktok_full, prev.get("tiktok_full"), "pts", first)))
+                           change(tiktok_full, prev_tiktok_full, "pts", first)))
     overview = {
         "color": COLOURS["overview"],
         "author": {"name": "PIRACY · Weekly report"},
@@ -219,6 +231,9 @@ def build(posts, prev, dashboard_url=None, today=None):
     else:
         notes.append(f"**Gameplay vs cinematics:** too early to call ({g['posts']} gameplay, "
                      f"{c['posts']} cinematic; needs {FORMATS_NEEDED} each)")
+    if gone:
+        notes.append(f"**No longer counted:** {len(gone)} post{'s' if len(gone) != 1 else ''} made private "
+                     "or deleted since the last report")
     early = [r for r in logged if str(r.get("snapshot") or "").startswith("about")]
     if early:
         notes.append("**Early numbers:** " + ", ".join(f"{r.get('video_id')} {r['platform']}" for r in early[:3])

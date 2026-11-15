@@ -39,8 +39,12 @@ def views(posted, rate, now):
 def fake_http(method, url, params=None, body=None, headers=None, tries=4):
     now, params = NOW[0], params or {}
     if "discord.com/api/webhooks" in url:
-        SENT.append({"method": method, "url": url.split("?")[0][-30:], "body": body})
-        return {"id": str(10**18 + len(SENT))} if method == "POST" else {}
+        if method == "GET":
+            return {"guild_id": "111111111111111111", "channel_id": "222222222222222222"}
+        SENT.append({"method": method, "url": url, "body": body})
+        mid = str(10**18 + len(SENT))
+        return {"id": mid, "channel_id": mid if (body or {}).get("thread_name") else "222222222222222222"} \
+            if method == "POST" else {}
     if url.endswith("/channels"):
         return {"items": [{"id": "UCpiracy000000000000000", "contentDetails": {"relatedPlaylists": {"uploads": "UUpiracy"}}}]}
     if url.endswith("/playlistItems"):
@@ -83,6 +87,7 @@ def main():
     sources.http = fake_http
     tmp = tempfile.mkdtemp(prefix="piracy-selftest-")
     os.environ.update({"BOT_DATA": tmp, "DISCORD_STATS_WEBHOOK": "https://discord.com/api/webhooks/1/selftest",
+                       "DISCORD_TABS_WEBHOOK": "https://discord.com/api/webhooks/2/tabs",
                        "YOUTUBE_API_KEY": "fake", "INSTAGRAM_TOKEN": "fake", "DRY_RUN": "0"})
     cfg_path = HERE / "config.json"
     cfg = json.loads(cfg_path.read_text())
@@ -109,11 +114,15 @@ def main():
             emb = (s["body"] or {}).get("embeds", [])
             report.append({"run": t, "method": s["method"],
                            "titles": [e.get("author", {}).get("name", "") + " | " + e.get("title", "") for e in emb]})
-            print(f"  {s['method']:5} " + " / ".join(x["title"] or x.get("author", {}).get("name", "") for x in emb))
+            print(f"  {s['method']:5} " + " / ".join(x.get("title") or x.get("author", {}).get("name", "") for x in emb))
     (HERE / "selftest_outbox.json").write_text(json.dumps(SENT, ensure_ascii=False, indent=1), encoding="utf-8")
-    edits = sum(1 for s in SENT if s["method"] == "PATCH")
+    edits = sum(1 for s in SENT if s["method"] == "PATCH" and "/1/selftest/" in s["url"])
+    tab_posts = sum(1 for s in SENT if s["method"] == "POST" and (s["body"] or {}).get("thread_name"))
+    tab_edits = sum(1 for s in SENT if s["method"] == "PATCH" and "thread_id=" in s["url"])
     assert edits == len(runs) - 1, "the scoreboard should be edited on every run after the first"
-    print(f"\nOK: {len(SENT)} Discord calls over {len(runs)} runs ({edits} scoreboard edits). "
+    assert tab_posts == 3 and tab_edits == 3 * (len(runs) - 1), "three tabs, created once, then edited"
+    print(f"\nOK: {len(SENT)} Discord calls over {len(runs)} runs ({edits} scoreboard edits, "
+          f"3 tabs created and edited {tab_edits} times). "
           f"Fake data only; see selftest_outbox.json.")
 
 
