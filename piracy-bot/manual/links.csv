@@ -1,0 +1,2 @@
+post,video_id,format,title
+"# Only needed to fix a mistake. post = the post's link, its id (yt:..., ig:..., tt:...) or its exact title",,,

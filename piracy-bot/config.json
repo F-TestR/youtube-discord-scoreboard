@@ -1,0 +1,30 @@
+{
+ "youtube": {
+  "channel": "@YOUR_YOUTUBE_HANDLE",
+  "shorts_max_seconds": 180
+ },
+ "instagram": {
+  "api_version": "v24.0"
+ },
+ "discord": {
+  "guild_id": "1562793205953462303",
+  "invite_code": "",
+  "invite_names": {}
+ },
+ "dashboard_url": "https://claude.ai/artifact/NdRxKBxdadnL724ND84Vtz",
+ "run_every_hours": 3,
+ "alerts": {
+  "take_off_multiplier": 2.0,
+  "take_off_min_views": 200
+ },
+ "weekly": {
+  "weekday": "Mon",
+  "hour_uk": 18
+ },
+ "scanner": {
+  "enabled": true,
+  "days": 7,
+  "queries": ["roblox devlog", "roblox game dev", "robloxdev", "roblox studio showcase"],
+  "exclude_channels": []
+ }
+}
