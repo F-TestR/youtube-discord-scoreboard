@@ -5,11 +5,11 @@
   "channel_id": "1571566241494335548",
   "guild_id": "1562793205953462303"
  },
- "last_run": "2026-11-16T16:50:44Z",
+ "last_run": "2026-11-16T19:06:59Z",
  "last_views": {
   "_members": 7.0,
   "tt:2026-11-15-cannon-to-the-kraken-cutscene": 18.0,
-  "yt:Thxs9ZZ0VD8": 1321.0
+  "yt:Thxs9ZZ0VD8": 1322.0
  },
  "platform_of": {
   "tt:2026-11-15-cannon-to-the-kraken-cutscene": "TikTok",
@@ -1610,8 +1610,9 @@
    ]
   }
  },
+ "weekly_done": "2026-W47",
  "weekly_prev": {
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "platforms": {
    "Instagram Reels": {
     "avg_views": null,
@@ -1644,19 +1645,19 @@
     "views": 18.0
    },
    "YouTube Shorts": {
-    "avg_views": 1086.857142857143,
-    "comments": 12.0,
+    "avg_views": 1322.0,
+    "comments": 1.0,
     "discord_joins": null,
-    "engagement_rate": 0.012355415352260778,
+    "engagement_rate": 0.009833585476550681,
     "follows": null,
     "follows_per_1k": null,
     "full_watch_pct": null,
-    "likes": 82.0,
-    "posts": 7,
+    "likes": 12.0,
+    "posts": 1,
     "saves": null,
     "shares": null,
-    "videos": 7,
-    "views": 7608.0
+    "videos": 1,
+    "views": 1322.0
    }
   },
   "posts": {
@@ -1675,41 +1676,11 @@
     "videos": 1,
     "views": 18.0
    },
-   "yt:8d1S91JBhIc": {
-    "avg_views": 1189.0,
-    "comments": 0.0,
-    "discord_joins": null,
-    "engagement_rate": 0.00672834314550042,
-    "follows": null,
-    "follows_per_1k": null,
-    "full_watch_pct": null,
-    "likes": 8.0,
-    "posts": 1,
-    "saves": null,
-    "shares": null,
-    "videos": 1,
-    "views": 1189.0
-   },
-   "yt:G1ODiIrd6Yc": {
-    "avg_views": 1040.0,
-    "comments": 2.0,
-    "discord_joins": null,
-    "engagement_rate": 0.015384615384615385,
-    "follows": null,
-    "follows_per_1k": null,
-    "full_watch_pct": null,
-    "likes": 14.0,
-    "posts": 1,
-    "saves": null,
-    "shares": null,
-    "videos": 1,
-    "views": 1040.0
-   },
    "yt:Thxs9ZZ0VD8": {
-    "avg_views": 1217.0,
+    "avg_views": 1322.0,
     "comments": 1.0,
     "discord_joins": null,
-    "engagement_rate": 0.010682004930156122,
+    "engagement_rate": 0.009833585476550681,
     "follows": null,
     "follows_per_1k": null,
     "full_watch_pct": null,
@@ -1718,84 +1689,24 @@
     "saves": null,
     "shares": null,
     "videos": 1,
-    "views": 1217.0
-   },
-   "yt:WCSBS7Qnhqo": {
-    "avg_views": 706.0,
-    "comments": 1.0,
-    "discord_joins": null,
-    "engagement_rate": 0.0169971671388102,
-    "follows": null,
-    "follows_per_1k": null,
-    "full_watch_pct": null,
-    "likes": 11.0,
-    "posts": 1,
-    "saves": null,
-    "shares": null,
-    "videos": 1,
-    "views": 706.0
-   },
-   "yt:mgEgzM7NYPE": {
-    "avg_views": 807.0,
-    "comments": 3.0,
-    "discord_joins": null,
-    "engagement_rate": 0.01858736059479554,
-    "follows": null,
-    "follows_per_1k": null,
-    "full_watch_pct": null,
-    "likes": 12.0,
-    "posts": 1,
-    "saves": null,
-    "shares": null,
-    "videos": 1,
-    "views": 807.0
-   },
-   "yt:okWQQrn54U8": {
-    "avg_views": 1460.0,
-    "comments": 4.0,
-    "discord_joins": null,
-    "engagement_rate": 0.009589041095890411,
-    "follows": null,
-    "follows_per_1k": null,
-    "full_watch_pct": null,
-    "likes": 10.0,
-    "posts": 1,
-    "saves": null,
-    "shares": null,
-    "videos": 1,
-    "views": 1460.0
-   },
-   "yt:q-DOMwfoemw": {
-    "avg_views": 1189.0,
-    "comments": 1.0,
-    "discord_joins": null,
-    "engagement_rate": 0.01345668629100084,
-    "follows": null,
-    "follows_per_1k": null,
-    "full_watch_pct": null,
-    "likes": 15.0,
-    "posts": 1,
-    "saves": null,
-    "shares": null,
-    "videos": 1,
-    "views": 1189.0
+    "views": 1322.0
    }
   },
   "tiktok_full": 0.158,
   "totals": {
-   "avg_views": 953.25,
-   "comments": 13.0,
+   "avg_views": 670.0,
+   "comments": 2.0,
    "discord_joins": null,
-   "engagement_rate": 0.013768686073957514,
+   "engagement_rate": 0.01791044776119403,
    "follows": 2.0,
-   "follows_per_1k": 0.26226068712300027,
+   "follows_per_1k": 1.492537313432836,
    "full_watch_pct": 0.158,
-   "likes": 88.0,
-   "posts": 8,
+   "likes": 18.0,
+   "posts": 2,
    "saves": 1.0,
    "shares": 3.0,
-   "videos": 7,
-   "views": 7626.0
+   "videos": 1,
+   "views": 1340.0
   }
  }
 }
