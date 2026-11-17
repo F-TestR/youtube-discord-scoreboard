@@ -5,13 +5,13 @@
   "channel_id": "1571566241494335548",
   "guild_id": "1562793205953462303"
  },
- "last_run": "2026-11-17T01:24:33Z",
+ "last_run": "2026-11-17T04:04:09Z",
  "last_views": {
   "_members": 8.0,
   "tt:2026-11-15-cannon-to-the-kraken-cutscene": 18.0,
   "yt:Thxs9ZZ0VD8": 1328.0,
-  "yt:Wp2pwWQsNOk": 436.0,
-  "yt:hcNvPpxCBxI": 7.0
+  "yt:Wp2pwWQsNOk": 991.0,
+  "yt:hcNvPpxCBxI": 10.0
  },
  "platform_of": {
   "tt:2026-11-15-cannon-to-the-kraken-cutscene": "TikTok",
@@ -2005,10 +2005,23 @@
     "comments": 1.0,
     "likes": 12.0,
     "views": 1299.0
+   },
+   "48": {
+    "age_h": 49.3,
+    "comments": 1.0,
+    "likes": 12.0,
+    "views": 1328.0
    }
   },
   "yt:WCSBS7Qnhqo": {},
-  "yt:Wp2pwWQsNOk": {},
+  "yt:Wp2pwWQsNOk": {
+   "3": {
+    "age_h": 4.8,
+    "comments": 4.0,
+    "likes": 19.0,
+    "views": 991.0
+   }
+  },
   "yt:hcNvPpxCBxI": {
    "3": {
     "age_h": 3.1,
