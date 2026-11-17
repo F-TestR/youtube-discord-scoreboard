@@ -5,11 +5,13 @@
   "channel_id": "1571566241494335548",
   "guild_id": "1562793205953462303"
  },
- "last_run": "2026-11-16T21:57:46Z",
+ "last_run": "2026-11-17T01:24:33Z",
  "last_views": {
-  "_members": 7.0,
+  "_members": 8.0,
   "tt:2026-11-15-cannon-to-the-kraken-cutscene": 18.0,
-  "yt:Thxs9ZZ0VD8": 1326.0
+  "yt:Thxs9ZZ0VD8": 1328.0,
+  "yt:Wp2pwWQsNOk": 436.0,
+  "yt:hcNvPpxCBxI": 7.0
  },
  "platform_of": {
   "tt:2026-11-15-cannon-to-the-kraken-cutscene": "TikTok",
@@ -17,24 +19,26 @@
   "yt:G1ODiIrd6Yc": "YouTube Shorts",
   "yt:Thxs9ZZ0VD8": "YouTube Shorts",
   "yt:WCSBS7Qnhqo": "YouTube Shorts",
+  "yt:Wp2pwWQsNOk": "YouTube Shorts",
+  "yt:hcNvPpxCBxI": "YouTube Shorts",
   "yt:mgEgzM7NYPE": "YouTube Shorts",
   "yt:okWQQrn54U8": "YouTube Shorts",
   "yt:q-DOMwfoemw": "YouTube Shorts"
  },
- "scan_day": "2026-11-16",
+ "scan_day": "2026-11-17",
  "scanner": {
   "-6R4puix4YE": {
    "channel": "jeremayy",
    "channel_id": "UC_f1k-OCrvs5f8i_qQiVXAg",
-   "comments": 408.0,
+   "comments": 410.0,
    "duration_s": 89,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 152141.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 7924.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 8247.0,
    "published": "2026-11-11T03:21:38Z",
    "title": "RECENT Q&A (NEW DEV ROD, POLARIS MASTERY, WISHING!) #fisch",
-   "views": 156364.0
+   "views": 166813.0
   },
   "-TAQy0FZt2k": {
    "channel": "Agilebot",
@@ -43,11 +47,11 @@
    "duration_s": 34,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 43415.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 1148.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 1171.0,
    "published": "2026-11-12T21:58:58Z",
    "title": "Roblox Studio tips&tricks (part 1 trillion) #robloxdev #roblox",
-   "views": 45791.0
+   "views": 47091.0
   },
   "-cr-xQPj1j4": {
    "channel": "Utility",
@@ -69,24 +73,24 @@
    "duration_s": 33,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 40712.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 531.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 534.0,
    "published": "2026-11-11T15:10:34Z",
    "title": "POV: making Tesla roadster game in 30 seconds #forgeguipartner #robloxdev #roblox #gamedeveloper",
-   "views": 41063.0
+   "views": 41551.0
   },
   "-n4w-BBtOXU": {
    "channel": "Marshrbx",
    "channel_id": "UCIorF3fxgf2NEA1GEPhMu4g",
-   "comments": 5.0,
+   "comments": 7.0,
    "duration_s": 48,
    "first_seen": "2026-11-16T01:35:02Z",
    "first_views": 3038.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 56.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 83.0,
    "published": "2026-11-11T05:13:52Z",
    "title": "How to make an Amazing Button in Roblox Studio Tutorial #robloxdev #robloxstudio",
-   "views": 3038.0
+   "views": 4307.0
   },
   "-nzL8kuaQbo": {
    "channel": "BloxzyViral",
@@ -108,11 +112,24 @@
    "duration_s": 34,
    "first_seen": "2026-11-16T01:35:02Z",
    "first_views": 582.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": 3.0,
    "published": "2026-11-15T00:41:57Z",
    "title": "A Stylized Forest Village | Roblox Studio",
-   "views": 582.0
+   "views": 625.0
+  },
+  "0GRTsWsz3ck": {
+   "channel": "AdamVids",
+   "channel_id": "UCOycVFR_raaoTCUplLCzmZg",
+   "comments": 12.0,
+   "duration_s": 37,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 21920.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 344.0,
+   "published": "2026-11-10T13:12:39Z",
+   "title": "Making a Funny Game in ROBLOX 🎮😎 #roblox #robloxdev",
+   "views": 21920.0
   },
   "0dBiLN5AF_I": {
    "channel": "Ghostifriedd",
@@ -121,11 +138,11 @@
    "duration_s": 26,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 3926.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": 74.0,
    "published": "2026-11-11T23:24:16Z",
    "title": "Day 13 Of Making A Viral Roblox Game",
-   "views": 3934.0
+   "views": 3935.0
   },
   "17vEDd5U21o": {
    "channel": "inputrig",
@@ -134,11 +151,11 @@
    "duration_s": 22,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 1308.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": 14.0,
    "published": "2026-11-11T23:23:06Z",
    "title": "gun showcase #robloxfyp #robloxstudio #robloxgame #robloxdevelopment #robloxdev",
-   "views": 1308.0
+   "views": 1307.0
   },
   "18lBJ4olyzs": {
    "channel": "Lnsti",
@@ -152,6 +169,19 @@
    "published": "2026-11-10T15:00:32Z",
    "title": "Legends Battlegrounds GOT LEAKED. | #legendsbattlegrounds #roblox",
    "views": 22054.0
+  },
+  "1vZhl7CVlek": {
+   "channel": "VexloR",
+   "channel_id": "UCVAyJczYwcAFK3IIBTehfWA",
+   "comments": 9.0,
+   "duration_s": 25,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 23456.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 511.0,
+   "published": "2026-11-14T13:12:32Z",
+   "title": "roblox is making game development way too easy with ai 💀",
+   "views": 23456.0
   },
   "1vfyWcPJA3U": {
    "channel": "Xavi Ch.",
@@ -173,11 +203,11 @@
    "duration_s": 90,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 94877.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 3692.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 3734.0,
    "published": "2026-11-10T03:59:43Z",
    "title": "RICHEST Roblox Developers!",
-   "views": 95837.0
+   "views": 97385.0
   },
   "2NEAHGdYYns": {
    "channel": "Revive Roblox - DevLog",
@@ -186,11 +216,24 @@
    "duration_s": 53,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 2022.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 90.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 104.0,
    "published": "2026-11-13T21:43:55Z",
    "title": "Trying to Revive Roblox - DevLog Episode 0",
-   "views": 2669.0
+   "views": 2941.0
+  },
+  "2qgbBZrc3nM": {
+   "channel": "BloxzyViral",
+   "channel_id": "UCm4tuZn4l9KxFbqAb0ab0SA",
+   "comments": 38.0,
+   "duration_s": 54,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 35571.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 1047.0,
+   "published": "2026-11-12T19:01:19Z",
+   "title": "Making Iron Man in Roblox 🦾 #robloxdev #roblox",
+   "views": 35571.0
   },
   "2xGuq7TdOzQ": {
    "channel": "Roblox Studioの寺子屋",
@@ -199,11 +242,24 @@
    "duration_s": 31,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 1096.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": 9.0,
    "published": "2026-11-13T09:00:29Z",
    "title": "【作品紹介】かぜのVFX練習記録　#roblox  #robloxstudio #ロブロックススタジオ #ロブロックス #shorts",
-   "views": 1099.0
+   "views": 1111.0
+  },
+  "3NkGT-Mot44": {
+   "channel": "coop",
+   "channel_id": "UCwLPRTPvZJhdds5IrHNTJZQ",
+   "comments": 10.0,
+   "duration_s": 20,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 3043.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 112.0,
+   "published": "2026-11-15T02:13:08Z",
+   "title": "making a gambling-related asym game, but we're STILL open to public testing || #roblox #asym #devlog",
+   "views": 3043.0
   },
   "3m2rvxpVO3Y": {
    "channel": "BloxzyViral",
@@ -221,15 +277,15 @@
   "3yGzNVybfJA": {
    "channel": "LuX",
    "channel_id": "UCPJibscek-jPEo8vKf4f-yw",
-   "comments": 114.0,
+   "comments": 116.0,
    "duration_s": 23,
    "first_seen": "2026-11-16T01:35:02Z",
    "first_views": 115086.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 3823.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 3931.0,
    "published": "2026-11-11T19:00:07Z",
    "title": "This Developer Just Got Fired | Forsaken",
-   "views": 115086.0
+   "views": 118570.0
   },
   "67wbOg21gEg": {
    "channel": "Dremo",
@@ -251,24 +307,37 @@
    "duration_s": 82,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 990.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 14.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 18.0,
    "published": "2026-11-14T22:01:01Z",
    "title": "roblox house showcase 3 #roblox",
-   "views": 992.0
+   "views": 1226.0
   },
   "8XLIao7CLPM": {
    "channel": "BloxzyViral",
    "channel_id": "UCm4tuZn4l9KxFbqAb0ab0SA",
-   "comments": 32.0,
+   "comments": 36.0,
    "duration_s": 54,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 33115.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 747.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 834.0,
    "published": "2026-11-12T19:01:31Z",
    "title": "Making Ben 10 in Roblox ⌚ #robloxdev #roblox",
-   "views": 36346.0
+   "views": 41493.0
+  },
+  "8bBoIDfgP0M": {
+   "channel": "ClwneRants",
+   "channel_id": "UCHU5xOlRNoOq7Vr1M0Nr0Tw",
+   "comments": 21.0,
+   "duration_s": 48,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 39586.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 1027.0,
+   "published": "2026-11-15T18:55:26Z",
+   "title": "Making Beerus in Under 30 Seconds #roblox #robloxdev #robloxstudio",
+   "views": 39586.0
   },
   "9Srs_RfOw4w": {
    "channel": "Axolotl ",
@@ -283,6 +352,19 @@
    "title": "Anim ID to KeyframeSequence | studio lite showcase!",
    "views": 716.0
   },
+  "AEp8eF-W7Kg": {
+   "channel": "BloxDude",
+   "channel_id": "UCgfEVf8fWz3I7f-5QZGUTRg",
+   "comments": 75.0,
+   "duration_s": 58,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 41608.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 1726.0,
+   "published": "2026-11-13T22:30:08Z",
+   "title": "Making The Ps5 Pro In Roblox! #robloxdev #roblox",
+   "views": 41608.0
+  },
   "AiZ-BySsInQ": {
    "channel": "kemycik",
    "channel_id": "UC01blCpxFKH2mALK6Fxir0Q",
@@ -290,24 +372,24 @@
    "duration_s": 30,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 133561.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 1861.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 1917.0,
    "published": "2026-11-12T11:11:09Z",
    "title": "Dino Game Is Peak #robloxdev #roblox #robloxfyp #robloxtrend #robloxs",
-   "views": 141516.0
+   "views": 149175.0
   },
   "BOAfYppictQ": {
    "channel": "NOOB NOVA",
    "channel_id": "UC6Ot8fdEluS9nOrFq2CWyug",
-   "comments": 0.0,
+   "comments": 1.0,
    "duration_s": 20,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 3001.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": null,
    "published": "2026-11-14T06:30:35Z",
    "title": "The Roblox CEO has secret account for...... #rblx #robloxshorts #relatable",
-   "views": 3588.0
+   "views": 4123.0
   },
   "Bwykk4D2oYk": {
    "channel": "DynaBricks",
@@ -316,11 +398,11 @@
    "duration_s": 27,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 1360.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": 16.0,
    "published": "2026-11-13T17:49:57Z",
    "title": "studded stylized tree showcase  #roblox #robloxstudio",
-   "views": 1373.0
+   "views": 1407.0
   },
   "Cc2_gcfVPaA": {
    "channel": "ary",
@@ -342,24 +424,37 @@
    "duration_s": 50,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 1370.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": 14.0,
    "published": "2026-11-14T17:00:23Z",
    "title": "I made 14 skins for a Roblox battery 🔋 | Day 5",
-   "views": 1384.0
+   "views": 1390.0
   },
   "DFWUu0s5JeE": {
    "channel": "Official Decay Team",
    "channel_id": "UCFh25gAqgmlRKvEFBwQsrlA",
-   "comments": 25.0,
+   "comments": 29.0,
    "duration_s": 58,
    "first_seen": "2026-11-16T01:35:02Z",
    "first_views": 4139.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 339.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 428.0,
    "published": "2026-11-14T19:47:11Z",
    "title": "DEVLOG 1PART 1 #roblox #forsaken #robloxgames #robloxstudio #viral #bitebynight #asymmetricalhorror",
-   "views": 4139.0
+   "views": 5252.0
+  },
+  "DJtgs6pppAk": {
+   "channel": "MrP Studio",
+   "channel_id": "UCQb9TuR1Fu0qeHqCBtFlnBw",
+   "comments": 3.0,
+   "duration_s": 161,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 1451.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 27.0,
+   "published": "2026-11-13T21:08:30Z",
+   "title": "Day 17 Of Making My Own Game: Eclipse Animator Is Good #game  #gamemaking  #roblox #robloxgamedesign",
+   "views": 1451.0
   },
   "DdOi9Kktqxk": {
    "channel": "ClwneRants",
@@ -368,11 +463,24 @@
    "duration_s": 45,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 47991.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 2134.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 2166.0,
    "published": "2026-11-10T17:05:45Z",
    "title": "Making Asta Devil Union in Under 30 Seconds #roblox #robloxdev #robloxstudio",
-   "views": 49302.0
+   "views": 51120.0
+  },
+  "E1ePlt_QAt4": {
+   "channel": "ThreeBloxs",
+   "channel_id": "UCrM0rE6ivgfid5FqyqGuicQ",
+   "comments": 0.0,
+   "duration_s": 5,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 2064.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 15.0,
+   "published": "2026-11-13T14:04:40Z",
+   "title": "Roblox Animation I Claude Opus 5.5 Showcase",
+   "views": 2064.0
   },
   "E5JBcT1To_4": {
    "channel": "BloxzyViral",
@@ -394,11 +502,11 @@
    "duration_s": 18,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 2226.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 22.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 23.0,
    "published": "2026-11-12T23:52:25Z",
    "title": "game name: make a restaurant [RNG]",
-   "views": 2231.0
+   "views": 2237.0
   },
   "ExuwOz8sU9k": {
    "channel": "To The Abyss RBLX",
@@ -420,11 +528,11 @@
    "duration_s": 25,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 25001.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 788.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 789.0,
    "published": "2026-11-12T18:37:08Z",
    "title": "BRO JUST CHEATED THE ROBLOX DEV SYSTEM 💀🤯 #forgeguipartner #robloxdev #roblox",
-   "views": 25039.0
+   "views": 25069.0
   },
   "GVkcITZ96IQ": {
    "channel": "Genlua",
@@ -433,11 +541,11 @@
    "duration_s": 57,
    "first_seen": "2026-11-16T01:35:02Z",
    "first_views": 28719.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 671.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 687.0,
    "published": "2026-11-10T21:21:18Z",
    "title": "I made Steal an Egg in Roblox using AI #roblox #robloxstudio #robloxdev",
-   "views": 28719.0
+   "views": 30293.0
   },
   "HDu19-Obhuw": {
    "channel": "Papu God",
@@ -446,11 +554,37 @@
    "duration_s": 104,
    "first_seen": "2026-11-16T01:35:02Z",
    "first_views": 49.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": 1.0,
    "published": "2026-11-14T16:07:47Z",
    "title": "Grabpack Showcase // ROBLOX STUDIO //",
    "views": 49.0
+  },
+  "Iq1KRN12MNw": {
+   "channel": "Josher",
+   "channel_id": "UCFHbz7k0-piePXhKzQccL3A",
+   "comments": 18.0,
+   "duration_s": 27,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 22668.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 275.0,
+   "published": "2026-11-14T15:45:08Z",
+   "title": "I Tried Recreating Cuphead In Roblox 🤯 #roblox #robloxgames #robloxdev",
+   "views": 22668.0
+  },
+  "JqMTDgPwfx4": {
+   "channel": "UncStatus",
+   "channel_id": "UCBVKip04rVjGAo3_9JvzWcw",
+   "comments": 12.0,
+   "duration_s": 30,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 23229.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 812.0,
+   "published": "2026-11-15T13:15:37Z",
+   "title": "ROBLOX DEV IS FINISHED 💀🔥 #roblox  #robloxdev #forgeguipartner",
+   "views": 23229.0
   },
   "JzDJN9yVsas": {
    "channel": "Skylto Gaming",
@@ -459,11 +593,11 @@
    "duration_s": 33,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 1585.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": 24.0,
    "published": "2026-11-12T17:00:30Z",
    "title": "I added speed… and broke drifting in Roblox 🔋 | Day 2",
-   "views": 1587.0
+   "views": 1585.0
   },
   "K14GeBdFZWk": {
    "channel": "ZoeChu",
@@ -472,7 +606,7 @@
    "duration_s": 17,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 1154.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": 5.0,
    "published": "2026-11-11T07:58:01Z",
    "title": "Detailing Part Plugin (Showcase) #roblox #robloxstudio #robloxdev #gamedev #robloxfyp #shorts",
@@ -491,18 +625,31 @@
    "title": "DONT SPLASH : BRO, WHY ARE RANDOMS ALWAYS EQUALLY GOOD.... ☠️ #robloxshorts #dontsplash #robloxmeme",
    "views": 33809.0
   },
+  "KUNcQfvTqKs": {
+   "channel": "ChrisDevRants",
+   "channel_id": "UCs3XrP-ShTfkpBuEQkHasDA",
+   "comments": 8.0,
+   "duration_s": 37,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 24210.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 211.0,
+   "published": "2026-11-14T08:05:09Z",
+   "title": "THE CAT IS HUNTING ME! 🐱💀 #forgeguipartner #robloxdev #roblox",
+   "views": 24210.0
+  },
   "Kgl0qcEg8GE": {
    "channel": "JTheMav",
    "channel_id": "UCxGeBZZTNBJhw6LP_cA9hOw",
-   "comments": 8.0,
+   "comments": 9.0,
    "duration_s": 49,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 2892.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 62.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 66.0,
    "published": "2026-11-12T21:15:24Z",
    "title": "Burlap Terror c00lkidd Showcase 👀  #roblox #forsaken #robloxedit #showcase",
-   "views": 2926.0
+   "views": 2971.0
   },
   "L4A2HgLyAKg": {
    "channel": "ReyRanchhh",
@@ -511,11 +658,24 @@
    "duration_s": 17,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 1351.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": null,
    "published": "2026-11-13T01:53:45Z",
    "title": "This Roblox NEW game is INSANE🤯#roblox #newgameinroblox  #jjkgame #upcomingrobloxgame",
-   "views": 1355.0
+   "views": 1371.0
+  },
+  "LaazxuDmGZc": {
+   "channel": "BesteCityBuildSetups",
+   "channel_id": "UCmN43YFKeSt-TsHCJR5XYTQ",
+   "comments": 2.0,
+   "duration_s": 25,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 1187.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 2.0,
+   "published": "2026-11-10T18:16:08Z",
+   "title": "Best FPS Shooter on ROBLOX?! Name is SHOTVOLT! #roblox #gaming #robloxgames #shorts",
+   "views": 1187.0
   },
   "LvrBcT6VFfc": {
    "channel": "RedTyp",
@@ -543,6 +703,19 @@
    "title": "Roblox New Update Was Insane 😱🥀#roblox #robloxdev #forgeguipartner",
    "views": 24674.0
   },
+  "MwJoWj70ouc": {
+   "channel": "Voxq",
+   "channel_id": "UC6b1vphF0XdBbi9K24dIxBg",
+   "comments": 1.0,
+   "duration_s": 35,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 869.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 9.0,
+   "published": "2026-11-15T00:39:47Z",
+   "title": "the most beautiful map showcase you will see today. | Roblox Studio",
+   "views": 869.0
+  },
   "My_QYxI7dGs": {
    "channel": "DemonChild",
    "channel_id": "UCYSW1B58BPw2LfoC6tR17Rw",
@@ -569,6 +742,19 @@
    "title": "Medved X Bull Bear Showcase",
    "views": 58444.0
   },
+  "Nqle9sSQ1Ew": {
+   "channel": "Aoun Playz YT",
+   "channel_id": "UCrmETqJ78owLCZrlvojMCFA",
+   "comments": 220.0,
+   "duration_s": 24,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 483694.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 8870.0,
+   "published": "2026-11-12T10:39:03Z",
+   "title": "Dev's Need to Fix This 💀  #roblox  #bloxfurit  #bloxfruits  #dough #shorts",
+   "views": 483694.0
+  },
   "O_weAKqXhDQ": {
    "channel": "Daisy Roblox Days",
    "channel_id": "UChr5EA7TdjDUdLMRiaxjIfg",
@@ -576,24 +762,37 @@
    "duration_s": 37,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 31351.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": 1434.0,
    "published": "2026-11-13T14:13:20Z",
    "title": "We Gotta Revive Roblox  #forgeguipartner #shorts  #roblox #robloxdev",
-   "views": 31396.0
+   "views": 31411.0
   },
   "OudhpDFDRT0": {
    "channel": "Mistful",
    "channel_id": "UCZyH0I4EyDoFqdK-HmyZ1Rw",
-   "comments": 60.0,
+   "comments": 67.0,
    "duration_s": 19,
    "first_seen": "2026-11-16T01:35:02Z",
    "first_views": 67969.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 799.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 884.0,
    "published": "2026-11-11T17:47:50Z",
    "title": "Medved X Spirit Showcase",
-   "views": 67969.0
+   "views": 76824.0
+  },
+  "OxSUdGHS1Po": {
+   "channel": "Axolotl ",
+   "channel_id": "UCjIVJYGw6-Ju3obdxDfPIYg",
+   "comments": 5.0,
+   "duration_s": 30,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 221.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 10.0,
+   "published": "2026-11-15T08:25:21Z",
+   "title": "Modern IK Solver | studio lite showcase!",
+   "views": 221.0
   },
   "PIi_f30NywY": {
    "channel": "Kieru",
@@ -602,11 +801,11 @@
    "duration_s": 26,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 4930.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 101.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 104.0,
    "published": "2026-11-12T14:00:25Z",
    "title": "Jam 3 pagi masih ngerjain Jakarta | Angkot Simulator Indonesia #shorts",
-   "views": 4955.0
+   "views": 5052.0
   },
   "POvOvcHa-Pw": {
    "channel": "Typical_Noob",
@@ -615,11 +814,11 @@
    "duration_s": 12,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 1504.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": 20.0,
    "published": "2026-11-11T14:38:08Z",
    "title": "spider crossbow showcase!",
-   "views": 1504.0
+   "views": 1503.0
   },
   "PU7TcQrqMcc": {
    "channel": "BloxzyViral",
@@ -641,11 +840,11 @@
    "duration_s": 35,
    "first_seen": "2026-11-16T01:35:02Z",
    "first_views": 95515.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 4339.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 4364.0,
    "published": "2026-11-11T03:04:48Z",
    "title": "NEW MAP COMING To Guts And Blackpowder??? #roblox #gutsandblackpowder #napoleon",
-   "views": 95515.0
+   "views": 96710.0
   },
   "QRayJecUw6I": {
    "channel": "Mr. Quimby",
@@ -654,11 +853,11 @@
    "duration_s": 57,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 269757.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 3357.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 3475.0,
    "published": "2026-11-10T08:01:37Z",
    "title": "Making Guess the Animal By Emoji Game 🐼",
-   "views": 276950.0
+   "views": 287232.0
   },
   "QyzNWzKlJ94": {
    "channel": "•Pebble•",
@@ -676,28 +875,28 @@
   "R4c10fOLvwc": {
    "channel": "Mr. Quimby",
    "channel_id": "UCzg2fo-shwQKKxW54sP04Dw",
-   "comments": 12.0,
+   "comments": 13.0,
    "duration_s": 65,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 69013.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 854.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 912.0,
    "published": "2026-11-10T14:45:51Z",
    "title": "Making Granny In Roblox 👵",
-   "views": 71059.0
+   "views": 81012.0
   },
   "RmEeVM8ED8I": {
    "channel": "BloxzyViral",
    "channel_id": "UCm4tuZn4l9KxFbqAb0ab0SA",
-   "comments": 52.0,
+   "comments": 57.0,
    "duration_s": 52,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 40946.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 798.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 869.0,
    "published": "2026-11-12T19:01:46Z",
    "title": "Making Dragon Ball Legends in Roblox 🐉 #robloxdev #roblox",
-   "views": 42560.0
+   "views": 47238.0
   },
   "SNx5FREwpWQ": {
    "channel": "LstrDev",
@@ -715,15 +914,15 @@
   "SSWRuzMMSf0": {
    "channel": "BloxzyViral",
    "channel_id": "UCm4tuZn4l9KxFbqAb0ab0SA",
-   "comments": 106.0,
+   "comments": 109.0,
    "duration_s": 54,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 40567.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 840.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 861.0,
    "published": "2026-11-12T19:02:00Z",
    "title": "Making Sonic Heroes in Roblox 💙 #robloxdev #roblox",
-   "views": 41756.0
+   "views": 43232.0
   },
   "Sg18U0FwUcM": {
    "channel": "BloxzyViral",
@@ -745,11 +944,11 @@
    "duration_s": 12,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 1460.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": 17.0,
    "published": "2026-11-12T15:24:51Z",
    "title": "Easy building animation made WITH A SINGLE PROMPT?!...🔥 #roblox #robloxdev #showcase #robloxstudio",
-   "views": 1463.0
+   "views": 1465.0
   },
   "T1vSDWaUdjQ": {
    "channel": "ReyRanchhh",
@@ -758,11 +957,24 @@
    "duration_s": 15,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 1214.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": 9.0,
    "published": "2026-11-12T00:24:38Z",
    "title": "This Roblox game is INSANE🤯#roblox #newgameinroblox  #jjkgame #upcomingrobloxgame",
-   "views": 1217.0
+   "views": 1221.0
+  },
+  "T66Ck4f2kfM": {
+   "channel": "Gloop",
+   "channel_id": "UCFJ7puRPvl_7FnQRpro14bg",
+   "comments": 69.0,
+   "duration_s": 13,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 5310.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 65.0,
+   "published": "2026-11-14T21:53:54Z",
+   "title": "Hiring devs #robloxdev #hiringrobloxdev #commission #roblox #robloxgames #robloxdevlog",
+   "views": 5310.0
   },
   "TCr0HyQBwNQ": {
    "channel": "Axolotl ",
@@ -793,15 +1005,15 @@
   "TUlGw-IH1EU": {
    "channel": "Damian",
    "channel_id": "UCBmEAxHS6ZpRM4i_tk3Wjag",
-   "comments": 186.0,
+   "comments": 405.0,
    "duration_s": 67,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 51316.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 2318.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 10762.0,
    "published": "2026-11-10T15:13:56Z",
    "title": "My game is in TROUBLE! #gamedev",
-   "views": 62530.0
+   "views": 282463.0
   },
   "TzWs6V0vJ9Q": {
    "channel": "DitchyDevelopments",
@@ -810,11 +1022,63 @@
    "duration_s": 18,
    "first_seen": "2026-11-16T01:35:02Z",
    "first_views": 31325.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 483.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 488.0,
    "published": "2026-11-13T22:24:43Z",
    "title": "Roblox Development Tips [15]  #RobloxDev #gamedev #RobloxStudio #robloxrant #roblox #robloxshort",
-   "views": 31325.0
+   "views": 31781.0
+  },
+  "VaGvsAZHXvA": {
+   "channel": "BloxzyViral",
+   "channel_id": "UCm4tuZn4l9KxFbqAb0ab0SA",
+   "comments": 113.0,
+   "duration_s": 51,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 110455.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 1221.0,
+   "published": "2026-11-13T20:15:39Z",
+   "title": "Making Five Nights at Freddy's in Roblox 🍕 #robloxdev #roblox",
+   "views": 110455.0
+  },
+  "Vgna7Mg2R98": {
+   "channel": "Genlua",
+   "channel_id": "UCI3artEkfURz81xtaVkN9TQ",
+   "comments": 13.0,
+   "duration_s": 35,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 30204.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 570.0,
+   "published": "2026-11-12T05:16:45Z",
+   "title": "I made a ragdoll game in Roblox using AI #roblox #robloxstudio #robloxdev",
+   "views": 30204.0
+  },
+  "VwJqC0NX5-U": {
+   "channel": "Agilebot",
+   "channel_id": "UCtgm5B2aHkiOZUHKaMaAG9Q",
+   "comments": 36.0,
+   "duration_s": 30,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 36008.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 987.0,
+   "published": "2026-11-14T23:05:10Z",
+   "title": "NEVER resize models like this ever again... #robloxdev #roblox",
+   "views": 36008.0
+  },
+  "X-GDOkPxOBM": {
+   "channel": "ClwneRants",
+   "channel_id": "UCHU5xOlRNoOq7Vr1M0Nr0Tw",
+   "comments": 21.0,
+   "duration_s": 37,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 32895.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 1101.0,
+   "published": "2026-11-14T20:51:48Z",
+   "title": "Making Shadow in Under 30 Seconds #roblox #robloxdev #robloxstudio",
+   "views": 32895.0
   },
   "XEnFqSGwq_E": {
    "channel": "GEN-Z【INDIAN VTUBER】",
@@ -836,11 +1100,11 @@
    "duration_s": 21,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 799.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": 23.0,
    "published": "2026-11-11T01:48:00Z",
    "title": "Roblox Liminal space + Dreamcore showcase #roblox #fyp",
-   "views": 803.0
+   "views": 808.0
   },
   "Y05zc8OG-LY": {
    "channel": "Genlua",
@@ -869,17 +1133,17 @@
    "views": 2687.0
   },
   "YHZLRb7bIyk": {
-   "channel": "DevAgony",
+   "channel": "DevSceneHair",
    "channel_id": "UCNKRmChSLVr8fa9A0_sO_xQ",
-   "comments": 21.0,
+   "comments": 22.0,
    "duration_s": 34,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 3012.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 76.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 77.0,
    "published": "2026-11-11T02:12:58Z",
    "title": "Making a Roblox Civilization Game | Devlog 17",
-   "views": 3051.0
+   "views": 3143.0
   },
   "YLLgpxfAzkg": {
    "channel": "villy",
@@ -901,11 +1165,11 @@
    "duration_s": 11,
    "first_seen": "2026-11-16T01:35:02Z",
    "first_views": 34498.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 234.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 237.0,
    "published": "2026-11-10T13:39:51Z",
    "title": "Making Ice Eating Game in Roblox #forgeguipartner #robloxdev #roblox",
-   "views": 34498.0
+   "views": 34587.0
   },
   "YtGB2DnOj2A": {
    "channel": "UGC Unboxed",
@@ -914,24 +1178,37 @@
    "duration_s": 20,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 4800.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": null,
    "published": "2026-11-12T16:43:12Z",
    "title": "Zero coding needed to make a viral Roblox horror game 🤯",
-   "views": 4820.0
+   "views": 4837.0
   },
   "Z5GT8tl2YzI": {
    "channel": "BartBloxFruits",
    "channel_id": "UCb8t0yw4kwUGzeO93hNhB_w",
-   "comments": 203.0,
+   "comments": 239.0,
    "duration_s": 29,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 152408.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 2478.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 2895.0,
    "published": "2026-11-14T04:30:03Z",
    "title": "The Dev Of Blox Fruits Opened My Door 😳 #roblox #bloxfruits #halloween",
-   "views": 159808.0
+   "views": 194071.0
+  },
+  "ZLYaNPFQSCI": {
+   "channel": "Iron Vanguard",
+   "channel_id": "UCSRuNX4Kb3uO80XtHtpdDEg",
+   "comments": 36.0,
+   "duration_s": 33,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 24097.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 716.0,
+   "published": "2026-11-14T20:16:40Z",
+   "title": "Roblox Players WON'T Believe This Update 🤯",
+   "views": 24097.0
   },
   "ZWd36t6VoQU": {
    "channel": "Catemenoi",
@@ -945,6 +1222,19 @@
    "published": "2026-11-09T22:31:50Z",
    "title": "I built 100 floors of the Backrooms in one day",
    "views": 4308.0
+  },
+  "_IdKBgIGSrM": {
+   "channel": "Iron Vanguard",
+   "channel_id": "UCSRuNX4Kb3uO80XtHtpdDEg",
+   "comments": 35.0,
+   "duration_s": 31,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 21506.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 509.0,
+   "published": "2026-11-10T19:39:11Z",
+   "title": "Roblox Is OFFICIALLY DEAD💀",
+   "views": 21506.0
   },
   "_gcm6QzXmE8": {
    "channel": "Catemenoi",
@@ -962,15 +1252,15 @@
   "_glOpgOpwKM": {
    "channel": "kittyevls",
    "channel_id": "UCoD30CNuzJ2FGcuuNLuhkSQ",
-   "comments": 84.0,
+   "comments": 87.0,
    "duration_s": 7,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 123685.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 2240.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 2327.0,
    "published": "2026-11-13T12:23:39Z",
    "title": "1 year character development #roblox #robloxfyp",
-   "views": 126114.0
+   "views": 130713.0
   },
   "aArldD14X8Q": {
    "channel": "RenoBlox",
@@ -988,15 +1278,15 @@
   "aV8yu9ISuO4": {
    "channel": "Hoshi",
    "channel_id": "UCDeBTslqXdVRwmTN8n_eJsA",
-   "comments": 1064.0,
+   "comments": 1218.0,
    "duration_s": 15,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 1173433.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 37705.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 45664.0,
    "published": "2026-11-12T09:51:13Z",
    "title": "Aftersite new roblox asym scp game looks insane #roblox #asym #horror",
-   "views": 1349193.0
+   "views": 1735287.0
   },
   "ax-iq-6xs1U": {
    "channel": "Top Gospel ",
@@ -1011,6 +1301,19 @@
    "title": "How to Copy Game on Roblox – Game Downloader, Roblox Studio & Place Files (Roblox Copy Game 2026)",
    "views": 1142.0
   },
+  "c4NxfyqsSho": {
+   "channel": "MrCat",
+   "channel_id": "UCuD1qkvUQt0W6i4RA3T18xQ",
+   "comments": 16.0,
+   "duration_s": 36,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 3079.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 91.0,
+   "published": "2026-11-15T09:35:01Z",
+   "title": "Parkour/Combat Game Showcase Part 3 #devlog #scripting #roblox #gaming #parkour",
+   "views": 3079.0
+  },
   "dFypJNA0vY0": {
    "channel": "ReyRanchhh",
    "channel_id": "UC6djDffM2qvk44m6pQBOxEA",
@@ -1018,11 +1321,24 @@
    "duration_s": 13,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 1320.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": 15.0,
    "published": "2026-11-10T22:34:53Z",
    "title": "This Roblox game is INSANE🤯#roblox #newgameinroblox  #jjkgame #upcomingrobloxgame",
-   "views": 1320.0
+   "views": 1321.0
+  },
+  "dQlOL5ze49M": {
+   "channel": "Pixel Vicky",
+   "channel_id": "UC6CVTDZU8bYHn4niosXam7g",
+   "comments": 12.0,
+   "duration_s": 24,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 24747.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 1046.0,
+   "published": "2026-11-11T16:45:15Z",
+   "title": "Emotes you might be looking for!  #viral #roblox #rblx #trending #robloxedit#edit#emote#fyp #shorts",
+   "views": 24747.0
   },
   "e6jbJb6bBdY": {
    "channel": "Long Chung",
@@ -1066,15 +1382,15 @@
   "eVMeI1h_tuU": {
    "channel": "ary",
    "channel_id": "UCtiI8Y-Sw_QyA3zi649N9Rg",
-   "comments": 142.0,
+   "comments": 145.0,
    "duration_s": 16,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 67628.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 1707.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 1720.0,
    "published": "2026-11-11T13:03:58Z",
    "title": "Forsaken Just FIRED a Developer?!..😬 #forsaken #roblox",
-   "views": 68001.0
+   "views": 68836.0
   },
   "ezoofE1gy-k": {
    "channel": "Dungeon Crawl",
@@ -1083,11 +1399,11 @@
    "duration_s": 32,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 641.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": 9.0,
    "published": "2026-11-13T23:34:09Z",
    "title": "custom door + custom proximity prompt showcase",
-   "views": 660.0
+   "views": 674.0
   },
   "f38VuTAWdcI": {
    "channel": "soda",
@@ -1102,6 +1418,19 @@
    "title": "RE:COIL showcase",
    "views": 1467.0
   },
+  "f3grd44tH3w": {
+   "channel": "BloxzyViral",
+   "channel_id": "UCm4tuZn4l9KxFbqAb0ab0SA",
+   "comments": 8.0,
+   "duration_s": 52,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 39910.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 845.0,
+   "published": "2026-11-14T20:49:20Z",
+   "title": "Making +1 Venom Evolution in Roblox 🖤 #robloxdev #roblox",
+   "views": 39910.0
+  },
   "fM66jIqspOQ": {
    "channel": "Dzzy",
    "channel_id": "UC3DibOyoXQBIQxwGQahCCzg",
@@ -1109,11 +1438,11 @@
    "duration_s": 13,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 2384.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 27.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 28.0,
    "published": "2026-11-14T15:33:57Z",
    "title": "SHOOTING BEAMS in ROBLOX..🔥 #roblox #robloxdev #showcase #robloxstudio #robloxgame",
-   "views": 2796.0
+   "views": 3423.0
   },
   "fUEeezhG9dI": {
    "channel": "MrBloxRanting",
@@ -1122,24 +1451,37 @@
    "duration_s": 35,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 25165.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": 520.0,
    "published": "2026-11-11T15:00:18Z",
    "title": "Building a Roblox Game Is Too Easy Now 😭 #forgeguipartner #roblox #robloxdev",
-   "views": 25176.0
+   "views": 25139.0
   },
   "fcikp7Th6Do": {
    "channel": "Artek",
    "channel_id": "UC7pCUy2buWmLylCcAiOXoDA",
-   "comments": 64.0,
+   "comments": 69.0,
    "duration_s": 32,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 13294.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 294.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 302.0,
    "published": "2026-11-11T01:24:38Z",
    "title": "GAME CREATOR in my Recroom 2 roblox style vr game #vr  #devlog  #metaquest #recroom #roblox #artek",
-   "views": 14521.0
+   "views": 15260.0
+  },
+  "fk0lDjsnuho": {
+   "channel": "NOOB NOVA",
+   "channel_id": "UC6Ot8fdEluS9nOrFq2CWyug",
+   "comments": 36.0,
+   "duration_s": 28,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 10723.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": null,
+   "published": "2026-11-15T12:30:37Z",
+   "title": "The sky is going crazy this November #rblx #robloxshorts #relatable #roblox",
+   "views": 10723.0
   },
   "fron236WOiA": {
    "channel": "Brownie & Rex",
@@ -1148,11 +1490,11 @@
    "duration_s": 22,
    "first_seen": "2026-11-16T01:35:02Z",
    "first_views": 1251.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": 16.0,
    "published": "2026-11-14T15:28:36Z",
    "title": "Is this THE movement system of 2026.. #roblox #robloxdev #showcase #robloxstudio #robloxgame",
-   "views": 1251.0
+   "views": 1266.0
   },
   "iCydnm4sN0Q": {
    "channel": "ClwneRants",
@@ -1166,6 +1508,19 @@
    "published": "2026-11-09T19:38:08Z",
    "title": "Making Gol D. Roger in Under 30 Seconds #roblox #robloxdev #robloxstudio",
    "views": 857189.0
+  },
+  "jU6OpSjCZ3w": {
+   "channel": "Genlua",
+   "channel_id": "UCI3artEkfURz81xtaVkN9TQ",
+   "comments": 7.0,
+   "duration_s": 31,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 41389.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 498.0,
+   "published": "2026-11-13T17:03:16Z",
+   "title": "1 TNT VS 1,000,000 TNT IN ROBLOX #roblox #robloxstudio #robloxdev",
+   "views": 41389.0
   },
   "jlaxNvZndok": {
    "channel": "SoloStudio",
@@ -1200,11 +1555,11 @@
    "duration_s": 13,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 30050.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 94.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 95.0,
    "published": "2026-11-10T22:10:43Z",
    "title": "this blue lock game feels crazy 😮 #azurelatch #bluelockrivals #bluelock #roblox #fortnite",
-   "views": 30156.0
+   "views": 30258.0
   },
   "lbR6rRAJGHU": {
    "channel": "Gab's Mods ",
@@ -1235,15 +1590,15 @@
   "mu4T2gd8TI8": {
    "channel": "Genlua",
    "channel_id": "UCI3artEkfURz81xtaVkN9TQ",
-   "comments": 7.0,
+   "comments": 8.0,
    "duration_s": 113,
    "first_seen": "2026-11-16T01:35:02Z",
    "first_views": 37794.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 981.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 993.0,
    "published": "2026-11-11T08:34:14Z",
    "title": "I made a bakery in Roblox using AI #roblox #robloxstudio #robloxdev",
-   "views": 37794.0
+   "views": 39744.0
   },
   "nZvie_nwP9I": {
    "channel": "Project Apex",
@@ -1274,15 +1629,15 @@
   "nmxJBgZu2KE": {
    "channel": "sophiasan",
    "channel_id": "UCaflPlFYo6YDcyvMB7HJjIQ",
-   "comments": 46.0,
+   "comments": 48.0,
    "duration_s": 8,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 56651.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 914.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 952.0,
    "published": "2026-11-13T00:35:59Z",
    "title": "DEV RODS ALREADY 😭🙏 #roblox #rodandreef #robloxshorts",
-   "views": 58008.0
+   "views": 60727.0
   },
   "nwAOxKYR5oA": {
    "channel": "Imaginoo",
@@ -1326,15 +1681,41 @@
   "olQGVcPtZ8M": {
    "channel": "Project Kukirin!",
    "channel_id": "UCdWNhj4anYTgM_pQhrEz_gQ",
-   "comments": 87.0,
+   "comments": 92.0,
    "duration_s": 39,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 90175.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 1714.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 1921.0,
    "published": "2026-11-10T15:53:05Z",
    "title": "Is project kukirin the best game #kukirin #roblox #escooter #dev",
-   "views": 99792.0
+   "views": 112915.0
+  },
+  "oxO-Pcegm8M": {
+   "channel": "pumpkinjajaja",
+   "channel_id": "UCGQq3ZjF9UmB0ga0epk5MPg",
+   "comments": 3.0,
+   "duration_s": 66,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 38.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 5.0,
+   "published": "2026-11-16T06:33:49Z",
+   "title": "Making my own Roblox game | devlog 2",
+   "views": 38.0
+  },
+  "p9jt72oSlAw": {
+   "channel": "Vessel Of Blood",
+   "channel_id": "UCL9gDixv-X4RYsE0qfuVjxA",
+   "comments": 0.0,
+   "duration_s": 101,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 509.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 8.0,
+   "published": "2026-11-16T18:20:42Z",
+   "title": "COPY ROBLOX GAMES | How to Copy MM2 Easy 🚀",
+   "views": 509.0
   },
   "q7HV-nrOr4U": {
    "channel": "BloxzyViral",
@@ -1352,28 +1733,41 @@
   "qCBRaUYZuu4": {
    "channel": "Drowsy",
    "channel_id": "UCO3VV-hOqzCL-TyTBNm4QXA",
-   "comments": 110.0,
+   "comments": 116.0,
    "duration_s": 9,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 143799.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 4383.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 4680.0,
    "published": "2026-11-13T09:18:32Z",
    "title": "who is this random choom #roblox #robloxdev #newgameinroblox #robloxgames #cyberpunk",
-   "views": 147831.0
+   "views": 157774.0
   },
   "qUVE6_xaZlk": {
    "channel": "Business Cat",
    "channel_id": "UC4FL6q4KDynZuZuEfrDM4dQ",
-   "comments": 12.0,
+   "comments": 13.0,
    "duration_s": 50,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 2058.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": null,
    "published": "2026-11-14T09:09:22Z",
    "title": "A new devlog is coming trust #blender #moonanimator #eclipse #asym #forsaken #dieofdeath",
-   "views": 2257.0
+   "views": 2735.0
+  },
+  "rWAEcK0fwek": {
+   "channel": "ValorRed",
+   "channel_id": "UC9o0b37fYeGPF6a4bghkSUA",
+   "comments": 4.0,
+   "duration_s": 13,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 1944.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 13.0,
+   "published": "2026-11-14T21:02:25Z",
+   "title": "I COMPLETELY REWORKED the MINING SYSTEM in SCUBA MINE… 🤯⛏️",
+   "views": 1944.0
   },
   "rbwPxBbSbSU": {
    "channel": "Drakola",
@@ -1388,31 +1782,70 @@
    "title": "Making an Angry Birds Game in Roblox 🐦 #robloxdev #roblox",
    "views": 46587.0
   },
+  "rc9NnP25ZFE": {
+   "channel": "Ropilot",
+   "channel_id": "UCbzuzwVbtZtFv05JigcGj3A",
+   "comments": 2.0,
+   "duration_s": 13,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 1820.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 15.0,
+   "published": "2026-11-15T15:46:42Z",
+   "title": "SHOOTING BEAMS in ROBLOX..🔥 #roblox #robloxdev #showcase #robloxstudio #robloxgame",
+   "views": 1820.0
+  },
   "sdwEc9xWPNQ": {
    "channel": "kemycik",
    "channel_id": "UC01blCpxFKH2mALK6Fxir0Q",
-   "comments": 50.0,
+   "comments": 54.0,
    "duration_s": 47,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 191635.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 2957.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 3678.0,
    "published": "2026-11-12T20:15:51Z",
    "title": "How Far Can You Throw #robloxdev #roblox #robloxstudio #robloxfyp #ro",
-   "views": 218088.0
+   "views": 269417.0
+  },
+  "tReUoUc3TJA": {
+   "channel": "BloxKaizo",
+   "channel_id": "UC4-kXaXjGmHsS5n03ddr3fg",
+   "comments": 12.0,
+   "duration_s": 19,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 27788.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 295.0,
+   "published": "2026-11-13T17:30:19Z",
+   "title": "ROBLOX DEVS CAN'T COMPETE WITH AI ANYMORE 💀 #roblox #forgeguipartner #robloxdev #rants",
+   "views": 27788.0
   },
   "tkuRk0TXEh8": {
    "channel": "MadeBy_Ananas",
    "channel_id": "UCEWsEoSK9B6Aqu1uZE7iOyw",
-   "comments": 12.0,
+   "comments": 15.0,
    "duration_s": 53,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 3682.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 100.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 101.0,
    "published": "2026-11-14T19:36:36Z",
    "title": "Fixing Bugs in Runners - DEVLOG P15 🐛🔥 #robloxstudio #robloxdev #robloxbugs",
-   "views": 4790.0
+   "views": 4934.0
+  },
+  "uMQwI9SWcOg": {
+   "channel": "ClwneRants",
+   "channel_id": "UCHU5xOlRNoOq7Vr1M0Nr0Tw",
+   "comments": 18.0,
+   "duration_s": 34,
+   "first_seen": "2026-11-17T01:24:33Z",
+   "first_views": 28812.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 885.0,
+   "published": "2026-11-13T16:03:16Z",
+   "title": "Making Trafalgar Law in Under 30 Seconds #roblox #robloxdev #robloxstudio",
+   "views": 28812.0
   },
   "ujAKKI2WhZE": {
    "channel": "BloxzyViral",
@@ -1434,11 +1867,11 @@
    "duration_s": 16,
    "first_seen": "2026-11-16T01:35:02Z",
    "first_views": 30398.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": 274.0,
    "published": "2026-11-11T20:58:20Z",
    "title": "Roblox Development Tips [14]  #RobloxDev #gamedev #RobloxStudio #robloxrant #roblox #robloxshort",
-   "views": 30398.0
+   "views": 30452.0
   },
   "wbWTPK9oWIA": {
    "channel": "Ezzie",
@@ -1473,11 +1906,11 @@
    "duration_s": 40,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 62824.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 1443.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 1525.0,
    "published": "2026-11-12T17:33:30Z",
    "title": "Making Izuku Midoriya Deku in Under 30 Seconds #roblox #robloxdev #robloxstudio",
-   "views": 65492.0
+   "views": 69477.0
   },
   "xQAiYitDKZ0": {
    "channel": "LstrDev",
@@ -1499,11 +1932,11 @@
    "duration_s": 15,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 627.0,
-   "last_seen": "2026-11-16T01:35:02Z",
+   "last_seen": "2026-11-17T01:24:33Z",
    "likes": 10.0,
    "published": "2026-11-11T17:49:30Z",
    "title": "Featured showcase by x.v_e_n_d_e_t_t_a.x #robloxdev  #robloxstudio   #venturadev  #roblox",
-   "views": 631.0
+   "views": 630.0
   },
   "z7dVtCl1puQ": {
    "channel": "Kieru",
@@ -1512,11 +1945,11 @@
    "duration_s": 31,
    "first_seen": "2026-11-15T17:28:37Z",
    "first_views": 1947.0,
-   "last_seen": "2026-11-16T01:35:02Z",
-   "likes": 21.0,
+   "last_seen": "2026-11-17T01:24:33Z",
+   "likes": 22.0,
    "published": "2026-11-13T10:00:26Z",
    "title": "Kenapa Jakarta belum rilis? | Angkot Simulator Indonesia #shorts",
-   "views": 1951.0
+   "views": 1967.0
   },
   "zNOA0M2Bqlw": {
    "channel": "GoBlox",
@@ -1538,6 +1971,8 @@
   "yt:G1ODiIrd6Yc",
   "yt:Thxs9ZZ0VD8",
   "yt:WCSBS7Qnhqo",
+  "yt:Wp2pwWQsNOk",
+  "yt:hcNvPpxCBxI",
   "yt:mgEgzM7NYPE",
   "yt:okWQQrn54U8",
   "yt:q-DOMwfoemw"
@@ -1573,6 +2008,15 @@
    }
   },
   "yt:WCSBS7Qnhqo": {},
+  "yt:Wp2pwWQsNOk": {},
+  "yt:hcNvPpxCBxI": {
+   "3": {
+    "age_h": 3.1,
+    "comments": 2.0,
+    "likes": 2.0,
+    "views": 7.0
+   }
+  },
   "yt:mgEgzM7NYPE": {},
   "yt:okWQQrn54U8": {},
   "yt:q-DOMwfoemw": {}
@@ -1595,7 +2039,9 @@
  "took_off": [],
  "video_of": {
   "tt:2026-11-15-cannon-to-the-kraken-cutscene": "V00",
-  "yt:Thxs9ZZ0VD8": "V00"
+  "yt:Thxs9ZZ0VD8": "V00",
+  "yt:Wp2pwWQsNOk": "V02",
+  "yt:hcNvPpxCBxI": "V01"
  },
  "videos": {
   "V00": {
@@ -1607,6 +2053,30 @@
     "cutscene",
     "fired",
     "kraken"
+   ]
+  },
+  "V01": {
+   "first_posted": "2026-11-16T22:21:03Z",
+   "format": null,
+   "title": "wait this is actually ROBLOX?? (new pirate game)",
+   "words": [
+    "actually",
+    "pirate",
+    "wait"
+   ]
+  },
+  "V02": {
+   "first_posted": "2026-11-16T23:14:31Z",
+   "format": "Gameplay",
+   "title": "New Roblox Pirate Game Has a Submarine Boss and Something…",
+   "words": [
+    "boss",
+    "has",
+    "pirate",
+    "robloxfyp",
+    "something",
+    "submarine",
+    "worse"
    ]
   }
  },
