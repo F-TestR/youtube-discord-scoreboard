@@ -247,7 +247,7 @@ def build(store, now, statuses):
             track_start = first_hist
         total_now, _ = total_at(pp, posts, now)
         typed = bool(mine) and all(p.get("source") == "typed" for p in mine)
-        if typed:
+        if typed or not mine:
             g24 = g_prev = g7 = g30 = None
         else:
             g24 = gain(pp, posts, now - dt.timedelta(hours=24), now)
