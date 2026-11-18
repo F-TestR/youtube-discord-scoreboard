@@ -2,16 +2,15 @@
 # Also runs straight away when someone edits piracy-bot/manual/ or piracy-bot/config.json,
 # or when you press "Run workflow" on the Actions tab. (Use that button, not "Re-run" on an
 # old run: a re-run uses the files as they were back then.)
-name: PIRACY stats bot
+name: PIRACY stats bot (V1, retired)
 
+# Retired: V2 (stats/, workflow "PIRACY stats V2") now runs every hour and has taken over
+# the Discord scoreboard. To roll back, put these lines back under "on:" and set
+# "live": false in stats/config.json:
+#   schedule:
+#     - cron: "17 */3 * * *"
 on:
-  schedule:
-    - cron: "17 */3 * * *"
   workflow_dispatch:
-  push:
-    paths:
-      - "piracy-bot/manual/**"
-      - "piracy-bot/config.json"
 
 permissions:
   contents: write   # the bot saves its memory in piracy-bot/data

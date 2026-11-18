@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Finish connecting · PIRACY Social Stats</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IM+Fell+English:ital@0;1&family=Pirata+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .connect { max-width: 680px; margin: 0 auto; padding: 40px 20px 60px; display: grid; gap: 22px; }
+  .connect .wordmark { font-size: 64px; }
+  .codebox { display: flex; gap: 10px; align-items: stretch; }
+  .codebox input { flex: 1; min-width: 0; background: #061319; color: var(--foam); border: 1px solid var(--line); border-radius: 10px;
+    padding: 0 14px; min-height: 48px; font: 15px var(--ui); }
+  .connect ol { margin: 0; padding-left: 22px; display: grid; gap: 10px; }
+  .warn { color: var(--gold); }
+</style>
+</head>
+<body>
+<main class="connect" id="main">
+  <p class="wordmark">PIRACY</p>
+  <div id="out"><p class="muted">Reading the sign-in…</p></div>
+</main>
+<script>
+(function () {
+  const q = new URLSearchParams(location.search);
+  const out = document.getElementById("out");
+  const service = q.get("state") === "google" ? "youtube" : q.get("state") === "tiktok" ? "tiktok" : null;
+  const names = { youtube: "YouTube Analytics", tiktok: "TikTok" };
+  const esc = (s) => String(s || "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  fetch("data.json", { cache: "no-store" }).then((r) => r.json()).catch(() => ({})).then((d) => {
+    const repo = (d.connect && d.connect.repo) || d.repo || "https://github.com/F-TestR/youtube-discord-scoreboard";
+    const run = repo + "/actions/workflows/piracy-connect.yml";
+    if (q.get("error") || !q.get("code")) {
+      out.innerHTML = `<h2>${q.get("error") ? "The sign-in didn't finish" : "Nothing to connect here yet"}</h2>
+        <p class="lead-sub">${q.get("error") ? "The app said: " + esc(q.get("error_description") || q.get("error")) + ". Go back to the Status page and press Connect again." :
+        "This page finishes connecting an app. Start from the Status page."}</p>
+        <p><a class="btn" href="./#status">Go to the Status page</a></p>`;
+      return;
+    }
+    out.innerHTML = `<h2>One last step for ${names[service] || "the app"}</h2>
+      <p class="lead-sub">The sign-in worked. Hand this one-time code to the bot so it can keep the connection going by itself.</p>
+      <div class="codebox"><label class="sr" for="code" hidden>One-time code</label><input id="code" readonly value="${esc(q.get("code"))}">
+        <button class="btn" type="button" id="copy">Copy code</button></div>
+      <ol>
+        <li>Open <a href="${esc(run)}" target="_blank" rel="noopener">Connect an app on GitHub</a>.</li>
+        <li>Press <b>Run workflow</b>, choose <b>${esc(service || "")}</b>, paste the code, then press the green <b>Run workflow</b> button.</li>
+        <li>Within a minute or two the Status page will show ${esc(names[service] || "it")} as Live.</li>
+      </ol>
+      <p class="small warn">The code only works once and expires after a few minutes. If it's too late, press Connect again on the Status page for a new one.</p>
+      <p><a class="btn ghost" href="./#status">Back to the Status page</a></p>`;
+    document.getElementById("copy").onclick = async (e) => {
+      const v = document.getElementById("code").value;
+      try { await navigator.clipboard.writeText(v); e.target.textContent = "Copied"; }
+      catch { document.getElementById("code").select(); e.target.textContent = "Press Ctrl+C"; }
+    };
+  });
+})();
+</script>
+</body>
+</html>

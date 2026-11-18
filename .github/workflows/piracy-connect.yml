@@ -1,0 +1,62 @@
+# Finish connecting TikTok or YouTube Analytics. The website's Status page sends you here
+# with a one-time code: press "Run workflow", pick the app, paste the code, run.
+name: Connect an app
+
+on:
+  workflow_dispatch:
+    inputs:
+      app:
+        description: "Which app"
+        type: choice
+        options: [tiktok, youtube]
+        required: true
+      code:
+        description: "The one-time code from the website"
+        type: string
+        required: true
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: piracy-stats-v2
+  cancel-in-progress: false
+
+jobs:
+  connect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Hide the code in the logs
+        env:
+          CODE: ${{ inputs.code }}
+        run: echo "::add-mask::$CODE"
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -q cryptography
+      - name: Swap the code for a lasting sign-in
+        env:
+          CODE: ${{ inputs.code }}
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+        run: python stats/connect.py "${{ inputs.app }}" "$CODE"
+      - name: Save it (encrypted)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add stats/data/vault.json
+          git commit -q -m "Connect ${{ inputs.app }} [skip ci]"
+          for attempt in 1 2 3; do
+            git pull -q --rebase -X theirs origin "$GITHUB_REF_NAME" && git push -q origin "HEAD:$GITHUB_REF_NAME" && break
+            git rebase --abort 2>/dev/null || true
+            sleep 5
+          done
+      - name: Update the stats straight away
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run piracy-stats-v2.yml --ref "$GITHUB_REF_NAME" || true
