@@ -54,7 +54,7 @@
   "discord": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-18T10:08:23Z"
+   "last_ok": "2026-11-18T12:00:25Z"
   },
   "instagram": {
    "alerted": false,
@@ -67,16 +67,17 @@
   "youtube": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-18T10:08:23Z"
+   "last_ok": "2026-11-18T12:00:25Z"
   },
   "youtube_analytics": {
    "alerted": false,
    "fails": 0
   }
  },
- "last_run": "2026-11-18T10:08:23Z",
+ "last_run": "2026-11-18T12:00:25Z",
  "scan_day": "2026-11-18",
  "sent": {
+  "checkin:tt:2026-11-15-cannon-to-the-kraken-cutscene:24": "2026-11-18T12:00:25Z",
   "checkin:yt:Thxs9ZZ0VD8:24": "2026-11-18T03:23:22Z",
   "checkin:yt:Wp2pwWQsNOk:24": "2026-11-18T03:23:22Z",
   "checkin:yt:hcNvPpxCBxI:24": "2026-11-18T03:23:22Z",
@@ -107,7 +108,7 @@
   }
  },
  "trends_cache": {
-  "fetched": "2026-11-18T07:21:05Z",
+  "fetched": "2026-11-18T12:00:25Z",
   "rows": [
    {
     "age_days": 16.0,
