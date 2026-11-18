@@ -3,5 +3,254 @@
   "commits": 23,
   "rows": 42
  },
- "scan_day": "2026-11-18"
+ "board_id": "1571592035369222409",
+ "groups": {
+  "V00": {
+   "first_posted": "2026-11-15T02:48:26Z",
+   "format": "Cinematic",
+   "title": "Cannon to the Kraken (cutscene)",
+   "words": [
+    "cannon",
+    "cutscene",
+    "fired",
+    "kraken"
+   ]
+  },
+  "V01": {
+   "first_posted": "2026-11-16T22:21:03Z",
+   "format": null,
+   "title": "wait this is actually ROBLOX?? (new pirate game)",
+   "words": [
+    "actually",
+    "pirate",
+    "wait"
+   ]
+  },
+  "V02": {
+   "first_posted": "2026-11-16T23:14:31Z",
+   "format": "Gameplay",
+   "title": "New Roblox Pirate Game Has a Submarine Boss and Something…",
+   "words": [
+    "boss",
+    "has",
+    "pirate",
+    "robloxfyp",
+    "something",
+    "submarine",
+    "worse"
+   ]
+  },
+  "V03": {
+   "first_posted": "2026-11-18T01:46:37Z",
+   "format": null,
+   "title": "wait… this is ROBLOX?? 😳 new roblox pirate game (part 2)",
+   "words": [
+    "part",
+    "wait"
+   ]
+  }
+ },
+ "health": {
+  "discord": {
+   "alerted": false,
+   "fails": 0,
+   "last_ok": "2026-11-18T03:23:22Z"
+  },
+  "instagram": {
+   "alerted": false,
+   "fails": 0
+  },
+  "tiktok": {
+   "alerted": false,
+   "fails": 0
+  },
+  "youtube": {
+   "alerted": false,
+   "fails": 0,
+   "last_ok": "2026-11-18T03:23:22Z"
+  },
+  "youtube_analytics": {
+   "alerted": false,
+   "fails": 0
+  }
+ },
+ "last_run": "2026-11-18T03:23:22Z",
+ "scan_day": "2026-11-18",
+ "sent": {
+  "checkin:yt:Thxs9ZZ0VD8:24": "2026-11-18T03:23:22Z",
+  "checkin:yt:Wp2pwWQsNOk:24": "2026-11-18T03:23:22Z",
+  "checkin:yt:hcNvPpxCBxI:24": "2026-11-18T03:23:22Z",
+  "milestone:followers:discord:10": "2026-11-18T03:23:22Z",
+  "milestone:followers:youtube:500": "2026-11-18T03:23:22Z",
+  "milestone:video:yt:Thxs9ZZ0VD8:1000": "2026-11-18T03:23:22Z",
+  "milestone:video:yt:Wp2pwWQsNOk:1000": "2026-11-18T03:23:22Z",
+  "milestone:views:youtube:1000": "2026-11-18T03:23:22Z",
+  "milestone:views:youtube:2500": "2026-11-18T03:23:22Z",
+  "new:tt:2026-11-15-cannon-to-the-kraken-cutscene": "2026-11-18T03:23:22Z",
+  "new:yt:MyaiC3b5-Pw": "2026-11-18T03:23:22Z",
+  "new:yt:Thxs9ZZ0VD8": "2026-11-18T03:23:22Z",
+  "new:yt:Wp2pwWQsNOk": "2026-11-18T03:23:22Z",
+  "new:yt:hcNvPpxCBxI": "2026-11-18T03:23:22Z"
+ },
+ "tabs": {
+  "Instagram Reels": {
+   "message": "1571592034001883221",
+   "thread": "1571592034001883221"
+  },
+  "TikTok": {
+   "message": "1571592032659439700",
+   "thread": "1571592032659439700"
+  },
+  "YouTube Shorts": {
+   "message": "1571592033578000476",
+   "thread": "1571592033578000476"
+  }
+ },
+ "trends_cache": {
+  "fetched": "2026-11-18T03:23:22Z",
+  "rows": [
+   {
+    "age_days": 11.0,
+    "growth": 2.17,
+    "id": "10774894770",
+    "name": "In This Town... [NEW MAPS]",
+    "players": 1136.0,
+    "reasons": "forecast: big rise ahead; Shorts taking off (23.5K views/hour); players ×2.2 vs last week",
+    "score": 55.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10774894770"
+   },
+   {
+    "age_days": 11.0,
+    "growth": 1.95,
+    "id": "10774906107",
+    "name": "😺+1 Catboy Evolution",
+    "players": 741.0,
+    "reasons": "growth just accelerated; forecast: big rise ahead; players ×2.0 vs last week",
+    "score": 47.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10774906107"
+   },
+   {
+    "age_days": 19.0,
+    "growth": 28.89,
+    "id": "10773711031",
+    "name": "Throw Key for Cars",
+    "players": 7663.0,
+    "reasons": "players ×28.9 vs last week; forecast: big rise ahead; on Roblox's Up-and-Coming",
+    "score": 43.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10773711031"
+   },
+   {
+    "age_days": 13.0,
+    "growth": 19.9,
+    "id": "10774639404",
+    "name": "Pixel Z [UPDATE!]",
+    "players": 2069.0,
+    "reasons": "players ×19.9 vs last week; forecast: big rise ahead; on Roblox's Up-and-Coming + Trending In Action",
+    "score": 43.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10774639404"
+   },
+   {
+    "age_days": 29.0,
+    "growth": 11.11,
+    "id": "10771886114",
+    "name": "Raise an Ant Colony 🐜",
+    "players": 2531.0,
+    "reasons": "players ×11.1 vs last week; forecast: big rise ahead; charting abroad first (2 countries)",
+    "score": 42.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10771886114"
+   },
+   {
+    "age_days": 19.0,
+    "growth": 3.82,
+    "id": "10773617422",
+    "name": "+1 Fighter Jet Evolution",
+    "players": 930.0,
+    "reasons": "forecast: big rise ahead; growth just accelerated; players ×3.8 vs last week",
+    "score": 41.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10773617422"
+   },
+   {
+    "age_days": 18.0,
+    "growth": 11.48,
+    "id": "10773765271",
+    "name": "Dig out of Hospital 🏥",
+    "players": 2088.0,
+    "reasons": "players ×11.5 vs last week; forecast: big rise ahead; 31 min played per player",
+    "score": 41.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10773765271"
+   },
+   {
+    "age_days": 13.0,
+    "growth": 2.09,
+    "id": "10774725421",
+    "name": "🌎 In This World",
+    "players": 580.0,
+    "reasons": "forecast: big rise ahead; Shorts taking off (35.5K views/hour); players ×2.1 vs last week",
+    "score": 40.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10774725421"
+   },
+   {
+    "age_days": 24.0,
+    "growth": 15.3,
+    "id": "10772689425",
+    "name": "Technical Ragdoll MMA 🥊 [ITEM SHOP]",
+    "players": 5672.0,
+    "reasons": "players ×15.3 vs last week; forecast: big rise ahead; on Roblox's Top Trending + Up-and-Coming",
+    "score": 40.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10772689425"
+   },
+   {
+    "age_days": 19.0,
+    "growth": 15.94,
+    "id": "10773637945",
+    "name": "[DURPLE] SPRUNKI MORPH",
+    "players": 1927.0,
+    "reasons": "players ×15.9 vs last week; forecast: big rise ahead; 41 min played per player",
+    "score": 38.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10773637945"
+   },
+   {
+    "age_days": 13.0,
+    "growth": 6.95,
+    "id": "10774646539",
+    "name": "Run a Christmas Tree Lot",
+    "players": 5520.0,
+    "reasons": "players ×6.9 vs last week; forecast: big rise ahead; on Roblox's Top Trending + Up-and-Coming",
+    "score": 36.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10774646539"
+   },
+   {
+    "age_days": 21.0,
+    "growth": 33.29,
+    "id": "10773282691",
+    "name": "🤡 Class Clowns",
+    "players": 4686.0,
+    "reasons": "players ×33.3 vs last week; forecast: more growth ahead; on Roblox's Top Trending + Up-and-Coming",
+    "score": 36.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10773282691"
+   }
+  ],
+  "site": "https://f-testr.github.io/TrendBot/"
+ },
+ "v1_board": "1571592035369222409",
+ "v2_started": "2026-11-18T03:23:22Z",
+ "video_of": {
+  "tt:2026-11-15-cannon-to-the-kraken-cutscene": "V00",
+  "yt:MyaiC3b5-Pw": "V03",
+  "yt:Thxs9ZZ0VD8": "V00",
+  "yt:Wp2pwWQsNOk": "V02",
+  "yt:hcNvPpxCBxI": "V01"
+ }
 }
