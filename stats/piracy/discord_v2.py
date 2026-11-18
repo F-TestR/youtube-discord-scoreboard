@@ -433,3 +433,21 @@ def platform_tab(pl, rows, summary, status, acc, now, site):
         msg.append(row([link("All videos", site.rstrip("/") + f"/#videos?app={pl}", "🎬"),
                         link("Dashboard", site.rstrip("/") + "/", "🌊")]))
     return msg
+
+
+def launch(site):
+    lines = ["## ⚓ PIRACY Stats V2 is live",
+             "The scoreboard just below now updates itself **every hour**, with a chart of the last week, "
+             "the top videos and a short ship's log of what changed.",
+             "**New here:**",
+             "• 🆕 a card for every new upload, then 24-hour and 7-day check-ins against your usual",
+             "• 🚀 a heads-up when a video is taking off, and 🏆 milestones as you pass them",
+             "• 📅 a weekly report every Monday at 18:00",
+             "• 🌊 a full dashboard on the website: every video's growth curve, analytics, research on other Roblox devs, "
+             "and the trend bot's board",
+             "-# TikTok and YouTube Analytics can be connected from the website's Status page. Pin the scoreboard below."]
+    out = [card([text("\n".join(lines))], ACCENT["gold"])]
+    if site:
+        base = site.rstrip("/") + "/"
+        out.append(row([link("Open the dashboard", base, "🌊"), link("Connect apps", base + "#status", "🔌")]))
+    return out

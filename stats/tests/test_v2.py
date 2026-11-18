@@ -132,6 +132,7 @@ class Rehearsal(unittest.TestCase):
         # turn Discord on, as after the switch-over
         cfg = json.loads((HERE.parent / "config.json").read_text())
         cfg["discord"]["live"] = True
+        cfg["discord"].pop("repost_board", None)
         cfg["site"]["ready"] = True
         (cls.tmp / "config.json").write_text(json.dumps(cfg))
         os.environ["STATS_CONFIG"] = str(cls.tmp / "config.json")
@@ -158,6 +159,17 @@ class Rehearsal(unittest.TestCase):
             cls.bot.main()
             cls.runs.append((t, world.sent[before:]))
             t += dt.timedelta(hours=2)
+        # then a one-off fresh scoreboard at the bottom of the channel
+        cfg["discord"]["repost_board"] = "v2-launch"
+        (cls.tmp / "config.json").write_text(json.dumps(cfg))
+        cls.old_board = json.loads((data / "state.json").read_text())["board_id"]
+        for k in range(2):
+            t += dt.timedelta(hours=1)
+            world.now = t
+            os.environ["BOT_NOW"] = util.iso(t)
+            before = len(world.sent)
+            cls.bot.main()
+            cls.repost_runs = getattr(cls, "repost_runs", []) + [world.sent[before:]]
         cls.data = data
 
     @classmethod
@@ -240,6 +252,18 @@ class Rehearsal(unittest.TestCase):
     def test_tabs_edited(self):
         tab_posts = [k for k in self.kinds() if "/webhooks/2/" in k[2] and k[1] == "POST"]
         self.assertLessEqual(len(tab_posts), 3)
+
+    def test_fresh_board_once(self):
+        first, second = self.repost_runs
+        posts = [c for c in first if c["method"] == "POST" and "/webhooks/1/" in c["path"]]
+        texts = [json.dumps(c["body"]) for c in posts]
+        self.assertTrue(any("V2 is live" in t for t in texts))
+        self.assertTrue(any("Live stats" in t for t in texts))
+        self.assertTrue(any(c["method"] == "DELETE" and c["path"].endswith(self.old_board) for c in first))
+        board = json.loads((self.data / "state.json").read_text())["board_id"]
+        self.assertNotEqual(board, self.old_board)
+        self.assertFalse(any(c["method"] == "POST" and "/webhooks/1/" in c["path"] for c in second))
+        self.assertTrue(any(c["method"] == "PATCH" and c["path"].endswith(board) for c in second))
 
     def test_site_data(self):
         d = json.loads((self.tmp / "site" / "data.json").read_text())
