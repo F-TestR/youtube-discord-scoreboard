@@ -3,7 +3,7 @@
   "commits": 23,
   "rows": 42
  },
- "board_id": "1571592035369222409",
+ "board_id": "1572623149097287750",
  "groups": {
   "V00": {
    "first_posted": "2026-11-15T02:48:26Z",
@@ -54,7 +54,7 @@
   "discord": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-18T13:14:11Z"
+   "last_ok": "2026-11-18T14:42:51Z"
   },
   "instagram": {
    "alerted": false,
@@ -67,22 +67,25 @@
   "youtube": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-18T13:14:11Z"
+   "last_ok": "2026-11-18T14:42:51Z"
   },
   "youtube_analytics": {
    "alerted": false,
    "fails": 0
   }
  },
- "last_run": "2026-11-18T13:14:11Z",
+ "last_run": "2026-11-18T14:42:51Z",
+ "reposted": "v2-launch",
  "scan_day": "2026-11-18",
  "sent": {
   "checkin:tt:2026-11-15-cannon-to-the-kraken-cutscene:24": "2026-11-18T12:00:25Z",
   "checkin:yt:Thxs9ZZ0VD8:24": "2026-11-18T03:23:22Z",
   "checkin:yt:Wp2pwWQsNOk:24": "2026-11-18T03:23:22Z",
   "checkin:yt:hcNvPpxCBxI:24": "2026-11-18T03:23:22Z",
+  "launch:v2-launch": "2026-11-18T14:42:51Z",
   "milestone:followers:discord:10": "2026-11-18T03:23:22Z",
   "milestone:followers:youtube:500": "2026-11-18T03:23:22Z",
+  "milestone:video:yt:MyaiC3b5-Pw:1000": "2026-11-18T14:42:51Z",
   "milestone:video:yt:Thxs9ZZ0VD8:1000": "2026-11-18T03:23:22Z",
   "milestone:video:yt:Wp2pwWQsNOk:1000": "2026-11-18T03:23:22Z",
   "milestone:views:youtube:1000": "2026-11-18T03:23:22Z",
