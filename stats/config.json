@@ -3,7 +3,7 @@
  "site": {
   "title": "PIRACY · Social Stats",
   "url": "https://f-testr.github.io/youtube-discord-scoreboard/",
-  "ready": false,
+  "ready": true,
   "run_every_hours": 1
  },
  "youtube": {
@@ -15,7 +15,7 @@
  },
  "discord": {
   "invite_code": "rTY4rMpk3p",
-  "live": false,
+  "live": true,
   "takeover_v1": true
  },
  "alerts": {
@@ -29,7 +29,14 @@
  "scanner": {
   "enabled": true,
   "days": 7,
-  "queries": ["roblox devlog", "roblox game dev", "robloxdev", "roblox studio showcase", "roblox pirate game", "sea of thieves roblox"],
+  "queries": [
+   "roblox devlog",
+   "roblox game dev",
+   "robloxdev",
+   "roblox studio showcase",
+   "roblox pirate game",
+   "sea of thieves roblox"
+  ],
   "exclude_channels": []
  },
  "trendbot": {
