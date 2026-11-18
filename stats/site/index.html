@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PIRACY · Social Stats</title>
+<meta name="description" content="How PIRACY's TikToks, YouTube Shorts and Reels are doing, updated every hour.">
+<meta name="theme-color" content="#0B1F27">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IM+Fell+English:ital@0;1&family=Pirata+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the numbers</a>
+<header class="hero" id="top">
+  <svg class="sky" aria-hidden="true" viewBox="0 0 1440 360" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <radialGradient id="moonGlow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F2E6CB" stop-opacity=".5"/><stop offset="1" stop-color="#F2E6CB" stop-opacity="0"/></radialGradient>
+    </defs>
+    <circle cx="1210" cy="92" r="120" fill="url(#moonGlow)"/>
+    <circle cx="1210" cy="92" r="34" fill="#F2E6CB" opacity=".9"/>
+    <g class="stars" fill="#E9F3F1">
+      <circle cx="120" cy="60" r="1.4"/><circle cx="260" cy="120" r="1"/><circle cx="410" cy="48" r="1.6"/><circle cx="560" cy="96" r="1"/>
+      <circle cx="700" cy="40" r="1.2"/><circle cx="860" cy="110" r="1.4"/><circle cx="980" cy="56" r="1"/><circle cx="1340" cy="160" r="1.2"/>
+      <circle cx="1060" cy="150" r="1"/><circle cx="330" cy="180" r="1"/><circle cx="1400" cy="40" r="1.4"/><circle cx="40" cy="150" r="1"/>
+    </g>
+  </svg>
+  <div class="hero-inner">
+    <p class="wordmark" aria-label="PIRACY">PIRACY</p>
+    <h1 class="hero-title">How our videos are doing</h1>
+    <p class="freshness" id="freshness"><span class="pulse" aria-hidden="true"></span><span id="fresh-text">Loading the latest numbers…</span></p>
+  </div>
+  <div class="sea" aria-hidden="true">
+    <svg class="ship" id="ship" viewBox="0 0 120 100"><g fill="none" stroke-linejoin="round">
+      <path d="M58 8 L58 70" stroke="#2B2118" stroke-width="3"/>
+      <path d="M60 12 C84 22 88 46 62 58 Z" fill="#F2E6CB" stroke="#2B2118" stroke-width="2"/>
+      <path d="M56 18 C34 28 30 48 54 58 Z" fill="#E9DDC0" stroke="#2B2118" stroke-width="2"/>
+      <path d="M58 6 L72 10 L58 14 Z" fill="#E7B24C"/>
+      <path d="M14 66 L106 66 L94 86 L26 86 Z" fill="#3B2A1E" stroke="#2B2118" stroke-width="2"/>
+      <path d="M26 74 L94 74" stroke="#E7B24C" stroke-width="1.6" stroke-dasharray="4 5"/>
+    </g></svg>
+    <svg class="wave w1" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 60 C 120 30 240 90 360 60 S 600 30 720 60 S 960 90 1080 60 S 1320 30 1440 60 L1440 120 L0 120 Z"/></svg>
+    <svg class="wave w2" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 70 C 140 45 280 95 420 70 S 700 45 840 70 S 1120 95 1260 70 S 1400 50 1440 60 L1440 120 L0 120 Z"/></svg>
+    <svg class="wave w3" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 80 C 160 60 320 100 480 80 S 800 60 960 80 S 1280 100 1440 80 L1440 120 L0 120 Z"/></svg>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Pages">
+  <div class="tabs-inner" role="tablist">
+    <a href="#overview" data-page="overview" role="tab">Overview</a>
+    <a href="#videos" data-page="videos" role="tab">Videos</a>
+    <a href="#analytics" data-page="analytics" role="tab">Analytics</a>
+    <a href="#research" data-page="research" role="tab">Research</a>
+    <a href="#trends" data-page="trends" role="tab">Roblox trends</a>
+    <a href="#status" data-page="status" role="tab">Status<span class="dot" id="status-dot" hidden></span></a>
+  </div>
+</nav>
+
+<main id="main" tabindex="-1">
+  <section class="page" id="page-overview" data-page="overview"></section>
+  <section class="page" id="page-videos" data-page="videos" hidden></section>
+  <section class="page" id="page-analytics" data-page="analytics" hidden></section>
+  <section class="page" id="page-research" data-page="research" hidden></section>
+  <section class="page" id="page-trends" data-page="trends" hidden></section>
+  <section class="page" id="page-status" data-page="status" hidden></section>
+</main>
+
+<dialog class="video-dialog" id="video-dialog" aria-labelledby="vd-title">
+  <div class="vd" id="vd"></div>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<footer class="foot">
+  <p>Numbers come straight from YouTube, TikTok, Instagram and Discord every hour. Each app counts views its own way, so they're shown side by side and never added together.</p>
+  <p><a id="repo-link" href="https://github.com/F-TestR/youtube-discord-scoreboard">How this works</a></p>
+</footer>
+<script src="chart.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

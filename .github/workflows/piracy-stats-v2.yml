@@ -1,0 +1,102 @@
+# PIRACY social stats V2: every hour it collects the numbers, updates Discord and
+# republishes the website (GitHub Pages). Also runs when its settings or code change.
+# Press "Run workflow" on the Actions tab to run it now.
+name: PIRACY stats V2
+
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+    inputs:
+      weekly:
+        description: "Post the weekly report now"
+        type: boolean
+        default: false
+      dry_run:
+        description: "Practice run: send nothing to Discord"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - "stats/config.json"
+      - "stats/manual/**"
+      - "stats/site/**"
+      - "stats/piracy/**"
+      - "stats/run.py"
+
+permissions:
+  contents: write     # the bot saves its memory in stats/data
+  pages: write        # and publishes the website
+  id-token: write
+
+concurrency:
+  group: piracy-stats-v2
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: stats/requirements.txt
+
+      - run: pip install -q -r stats/requirements.txt
+
+      - name: Run the bot
+        env:
+          DISCORD_STATS_WEBHOOK: ${{ secrets.DISCORD_STATS_WEBHOOK }}
+          DISCORD_TABS_WEBHOOK: ${{ secrets.DISCORD_TABS_WEBHOOK }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          FORCE_WEEKLY: ${{ inputs.weekly && '1' || '' }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
+        run: python stats/run.py
+
+      - name: Save the bot's memory
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add stats/data
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -q -m "Stats V2 update [skip ci]"
+          # if the repo changed meanwhile (the old bot, or an edit), keep this run's numbers and retry
+          for attempt in 1 2 3 4; do
+            if git pull -q --rebase -X theirs origin "$GITHUB_REF_NAME" && git push -q origin "HEAD:$GITHUB_REF_NAME"; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((attempt * 5))
+          done
+          echo "Couldn't save the bot's memory to the repo."
+          exit 1
+
+      - name: Package the website
+        if: always() && hashFiles('stats/_site/index.html') != ''
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: stats/_site
+          retention-days: 1
+
+  website:
+    needs: run
+    if: always() && needs.run.result != 'cancelled'
+    runs-on: ubuntu-latest
+    continue-on-error: true    # until GitHub Pages is switched on, this step just skips
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

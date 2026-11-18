@@ -1,0 +1,39 @@
+{
+ "repo_url": "https://github.com/F-TestR/youtube-discord-scoreboard",
+ "site": {
+  "title": "PIRACY · Social Stats",
+  "url": "https://f-testr.github.io/youtube-discord-scoreboard/",
+  "ready": false,
+  "run_every_hours": 1
+ },
+ "youtube": {
+  "channel": "@ThatOneKull",
+  "shorts_max_seconds": 180
+ },
+ "instagram": {
+  "api_version": "v24.0"
+ },
+ "discord": {
+  "invite_code": "rTY4rMpk3p",
+  "live": false,
+  "takeover_v1": true
+ },
+ "alerts": {
+  "take_off_multiplier": 2.0,
+  "take_off_min_views": 200
+ },
+ "weekly": {
+  "weekday": "Mon",
+  "hour_uk": 18
+ },
+ "scanner": {
+  "enabled": true,
+  "days": 7,
+  "queries": ["roblox devlog", "roblox game dev", "robloxdev", "roblox studio showcase", "roblox pirate game", "sea of thieves roblox"],
+  "exclude_channels": []
+ },
+ "trendbot": {
+  "board_url": "https://raw.githubusercontent.com/F-TestR/TrendBot/reports/reports/board.csv",
+  "site": "https://f-testr.github.io/TrendBot/"
+ }
+}
