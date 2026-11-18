@@ -1,0 +1,53 @@
+# Practice run of V2 against the real apps, on the v2 branch only. Sends nothing to Discord
+# and saves nothing: it just shows that collecting, analysing and building the site work.
+name: PIRACY stats V2 practice run
+
+on:
+  push:
+    branches: [v2]
+    paths: ["stats/**", ".github/workflows/piracy-stats-v2-preview.yml"]
+
+jobs:
+  practice:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: stats/requirements.txt
+      - run: pip install -q -r stats/requirements.txt
+      - name: Practice run (nothing sent, nothing saved)
+        env:
+          DRY_RUN: "1"
+          STATS_DATA: ${{ runner.temp }}/data
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          DISCORD_STATS_WEBHOOK: ${{ secrets.DISCORD_STATS_WEBHOOK }}
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+        run: |
+          cp -r stats/data "$STATS_DATA"
+          python stats/run.py
+          python - <<'PY'
+          import json, os
+          d = json.load(open("stats/_site/data.json"))
+          s = d["summary"]["platforms"]
+          for pl, v in s.items():
+              print(f"{pl:10} posts={v['posts']} total={v['total_views']} 24h={v['gain_24h']} followers={v['followers']}")
+          print("discord", d["summary"].get("discord"))
+          print("statuses", {k: v.get("status") for k, v in d["status"].items()})
+          print("insights:"); [print("  -", n["text"]) for n in d["insights"]]
+          print("scan:", d["research"]["scan"].get("scanned"), "trend rows:", len(d["research"]["trends"].get("rows", [])))
+          ob = json.load(open(os.environ["STATS_DATA"] + "/outbox.json"))
+          print("outbox:", [m["kind"] for m in ob])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: practice-site
+          path: |
+            stats/_site
+            ${{ runner.temp }}/data/outbox.json
+          retention-days: 3
