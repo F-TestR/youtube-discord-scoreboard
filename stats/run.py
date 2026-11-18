@@ -314,8 +314,31 @@ def main():
             state["v1_board"] = v1["board_id"]
             state.setdefault("tabs", {k: v for k, v in (v1.get("tabs") or {}).items()})
     board_id = state.get("board_id") if live_mode else state.get("shadow_board")
+    # one-off: post a fresh scoreboard at the bottom of the channel (with a short note on
+    # what's new) and remove the old one, whenever config "repost_board" gets a new value
+    repost = dcfg.get("repost_board")
+    just_posted = False
+    if live_mode and repost and state.get("reposted") != repost:
+        try:
+            if f"launch:{repost}" not in sent:
+                sent[f"launch:{repost}"] = ts
+                st.save()
+                disc.send(D.launch(site_url), kind="launch")
+            msg = disc.send(board, files, kind="scoreboard")
+            if (msg or {}).get("id"):
+                if str(board_id or "").isdigit():
+                    disc.delete(board_id)
+                state["board_id"] = msg["id"]
+                state["reposted"] = repost
+                just_posted = True
+                st.save()
+                print("  posted a fresh scoreboard at the bottom of the channel: pin it")
+        except Exception as e:
+            print(f"  couldn't post the fresh scoreboard: {e}")
     try:
-        if not (board_id and disc.edit(board_id, board, files, kind="scoreboard")):
+        if just_posted:
+            pass
+        elif not (board_id and disc.edit(board_id, board, files, kind="scoreboard")):
             msg = disc.send(board, files, kind="scoreboard")
             new_id = (msg or {}).get("id")
             if live_mode:
