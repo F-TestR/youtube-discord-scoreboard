@@ -54,7 +54,7 @@
   "discord": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-19T10:12:20Z"
+   "last_ok": "2026-11-19T11:59:46Z"
   },
   "instagram": {
    "alerted": false,
@@ -67,14 +67,14 @@
   "youtube": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-19T10:12:20Z"
+   "last_ok": "2026-11-19T11:59:46Z"
   },
   "youtube_analytics": {
    "alerted": false,
    "fails": 0
   }
  },
- "last_run": "2026-11-19T10:12:20Z",
+ "last_run": "2026-11-19T11:59:46Z",
  "reposted": "v2-launch",
  "scan_day": "2026-11-19",
  "sent": {
@@ -112,139 +112,139 @@
   }
  },
  "trends_cache": {
-  "fetched": "2026-11-19T07:18:29Z",
+  "fetched": "2026-11-19T11:59:46Z",
   "rows": [
    {
-    "age_days": 16.0,
-    "growth": 9.58,
+    "age_days": 29.0,
+    "growth": 40.28,
+    "id": "10772284025",
+    "name": "[⚡ UPD 2] Be The Biggest Streamer",
+    "players": 7471.0,
+    "reasons": "players come back on weekdays; players ×40.3 vs last week; forecast: more growth ahead",
+    "score": 88.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10772284025"
+   },
+   {
+    "age_days": 17.0,
+    "growth": 14.43,
     "id": "10774303559",
     "name": "Fish for Secret Animals!",
-    "players": 3484.0,
-    "reasons": "growth just accelerated; players ×9.6 vs last week; forecast: big rise ahead",
-    "score": 79.0,
+    "players": 4266.0,
+    "reasons": "players ×14.4 vs last week; growth just accelerated; forecast: big rise ahead",
+    "score": 80.0,
     "sea": false,
     "url": "https://www.roblox.com/games/start?universeId=10774303559"
    },
    {
-    "age_days": 28.0,
-    "growth": 4.68,
-    "id": "10772308213",
-    "name": "MM2: FFA [NEW] 🎯",
-    "players": 640.0,
-    "reasons": "growth just accelerated; forecast: big rise ahead; players ×4.7 vs last week",
-    "score": 65.0,
+    "age_days": 15.0,
+    "growth": 12.82,
+    "id": "10774639404",
+    "name": "Pixel Z",
+    "players": 2584.0,
+    "reasons": "players come back on weekdays; players ×12.8 vs last week; forecast: big rise ahead",
+    "score": 80.0,
     "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10772308213"
+    "url": "https://www.roblox.com/games/start?universeId=10774639404"
    },
    {
-    "age_days": 14.0,
-    "growth": 7.87,
+    "age_days": 15.0,
+    "growth": 9.61,
     "id": "10774725421",
     "name": "🌎 In This World",
-    "players": 830.0,
-    "reasons": "players ×7.9 vs last week; forecast: big rise ahead; Shorts taking off (21.2K views/hour)",
-    "score": 61.0,
+    "players": 1724.0,
+    "reasons": "players ×9.6 vs last week; forecast: big rise ahead; Shorts taking off (52.1K views/hour)",
+    "score": 70.0,
     "sea": false,
     "url": "https://www.roblox.com/games/start?universeId=10774725421"
    },
    {
+    "age_days": 44.0,
+    "growth": 21.75,
+    "id": "10769580813",
+    "name": "Grapple Sniper Arena",
+    "players": 3641.0,
+    "reasons": "players ×21.7 vs last week; forecast: big rise ahead; charting abroad first (1 countries)",
+    "score": 70.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10769580813"
+   },
+   {
+    "age_days": 19.0,
+    "growth": 8.3,
+    "id": "10774066980",
+    "name": "[NEW MAP] Cambria - Creature Survival",
+    "players": 2888.0,
+    "reasons": "players ×8.3 vs last week; forecast: big rise ahead; players come back on weekdays",
+    "score": 61.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10774066980"
+   },
+   {
+    "age_days": 19.0,
+    "growth": 8.16,
+    "id": "10774051115",
+    "name": "Clean The Ballpit! ",
+    "players": 12438.0,
+    "reasons": "players come back on weekdays; players ×8.2 vs last week; on Roblox's Top Trending + Up-and-Coming",
+    "score": 58.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10774051115"
+   },
+   {
+    "age_days": 14.0,
+    "growth": 14.11,
+    "id": "10774759040",
+    "name": "Warnetopia: Internet Cafe",
+    "players": 7343.0,
+    "reasons": "players ×14.1 vs last week; forecast: big rise ahead; 94 min played per player",
+    "score": 48.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10774759040"
+   },
+   {
+    "age_days": 30.0,
+    "growth": 26.38,
+    "id": "10772133952",
+    "name": "[✨ NEW ZONES] Summon a Pet Army 🐲",
+    "players": 7197.0,
+    "reasons": "players ×26.4 vs last week; forecast: big rise ahead; players come back on weekdays",
+    "score": 47.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10772133952"
+   },
+   {
     "age_days": 10.0,
-    "growth": 5.02,
-    "id": "10775306701",
-    "name": "Animal Ragdoll",
-    "players": 553.0,
-    "reasons": "growth just accelerated; forecast: big rise ahead; players ×5.0 vs last week",
-    "score": 54.0,
+    "growth": 22.92,
+    "id": "10775487566",
+    "name": "Forge The Egg!",
+    "players": 6611.0,
+    "reasons": "players ×22.9 vs last week; Shorts taking off (40.3K views/hour); YouTube buzz (507.5K views in 48h)",
+    "score": 46.0,
     "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10775306701"
+    "url": "https://www.roblox.com/games/start?universeId=10775487566"
    },
    {
-    "age_days": 12.0,
-    "growth": 2.12,
-    "id": "10774894770",
-    "name": "In This Town... [NEW MAPS]",
-    "players": 468.0,
-    "reasons": "forecast: big rise ahead; Shorts taking off (20.7K views/hour); players ×2.1 vs last week",
-    "score": 50.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10774894770"
-   },
-   {
-    "age_days": 17.0,
-    "growth": 13.5,
+    "age_days": 18.0,
+    "growth": 21.6,
     "id": "10774244015",
     "name": "[⚔️] Kit PVP FFA ",
-    "players": 3656.0,
-    "reasons": "players ×13.5 vs last week; forecast: big rise ahead; charting abroad first (2 countries)",
-    "score": 48.0,
+    "players": 9519.0,
+    "reasons": "players ×21.6 vs last week; forecast: big rise ahead; on Roblox's Up-and-Coming + Trending In Action",
+    "score": 46.0,
     "sea": false,
     "url": "https://www.roblox.com/games/start?universeId=10774244015"
    },
    {
-    "age_days": 25.0,
-    "growth": 27.2,
-    "id": "10772689425",
-    "name": "Technical Ragdoll MMA 🥊",
-    "players": 5935.0,
-    "reasons": "players ×27.2 vs last week; forecast: big rise ahead; on Roblox's Top Trending + Up-and-Coming",
+    "age_days": 42.0,
+    "growth": 16.06,
+    "id": "10769832216",
+    "name": "[🚀] Slap Volleyball!",
+    "players": 2960.0,
+    "reasons": "players ×16.1 vs last week; forecast: big rise ahead; charting abroad first (3 countries)",
     "score": 45.0,
     "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10772689425"
-   },
-   {
-    "age_days": 30.0,
-    "growth": 14.11,
-    "id": "10771886114",
-    "name": "Raise an Ant Colony 🐜",
-    "players": 3058.0,
-    "reasons": "players ×14.1 vs last week; forecast: big rise ahead; charting abroad first (3 countries)",
-    "score": 45.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10771886114"
-   },
-   {
-    "age_days": 10.0,
-    "growth": 6.87,
-    "id": "10775306547",
-    "name": "Ragdoll Gladiator Arena",
-    "players": 953.0,
-    "reasons": "players ×6.9 vs last week; forecast: big rise ahead; part of a wave (\"ragdoll\", 1 new games)",
-    "score": 43.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10775306547"
-   },
-   {
-    "age_days": 12.0,
-    "growth": 3.88,
-    "id": "10774906107",
-    "name": "😺+1 Catboy Evolution",
-    "players": 1448.0,
-    "reasons": "forecast: big rise ahead; growth just accelerated; players ×3.9 vs last week",
-    "score": 42.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10774906107"
-   },
-   {
-    "age_days": 10.0,
-    "growth": 3.74,
-    "id": "10775448585",
-    "name": "Don't Miss the Plane✈️",
-    "players": 1722.0,
-    "reasons": "forecast: big rise ahead; players ×3.7 vs last week; buzzing across platforms",
-    "score": 41.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10775448585"
-   },
-   {
-    "age_days": 29.0,
-    "growth": 26.94,
-    "id": "10772133952",
-    "name": "[✨ NEW ZONES] Summon a Pet Army 🐲",
-    "players": 7646.0,
-    "reasons": "players ×26.9 vs last week; forecast: big rise ahead; on Roblox's Up-and-Coming + Trending In Simulation",
-    "score": 38.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10772133952"
+    "url": "https://www.roblox.com/games/start?universeId=10769832216"
    }
   ],
   "site": "https://f-testr.github.io/TrendBot/"
