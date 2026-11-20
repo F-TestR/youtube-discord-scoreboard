@@ -54,7 +54,7 @@
   "discord": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-19T23:46:02Z"
+   "last_ok": "2026-11-20T01:04:41Z"
   },
   "instagram": {
    "alerted": false,
@@ -67,16 +67,16 @@
   "youtube": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-19T23:46:02Z"
+   "last_ok": "2026-11-20T01:04:41Z"
   },
   "youtube_analytics": {
    "alerted": false,
    "fails": 0
   }
  },
- "last_run": "2026-11-19T23:46:02Z",
+ "last_run": "2026-11-20T01:04:41Z",
  "reposted": "v2-launch",
- "scan_day": "2026-11-19",
+ "scan_day": "2026-11-20",
  "sent": {
   "checkin:tt:2026-11-15-cannon-to-the-kraken-cutscene:24": "2026-11-18T12:00:25Z",
   "checkin:yt:MyaiC3b5-Pw:24": "2026-11-19T02:54:36Z",
