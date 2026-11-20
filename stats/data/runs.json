@@ -586,5 +586,19 @@
    "youtube_analytics": "not_connected"
   },
   "ts": "2026-11-20T07:22:47Z"
+ },
+ {
+  "mode": "live",
+  "ok": true,
+  "seconds": 4.4,
+  "sent": 4,
+  "statuses": {
+   "discord": "ok",
+   "instagram": "not_connected",
+   "tiktok": "typed",
+   "youtube": "ok",
+   "youtube_analytics": "not_connected"
+  },
+  "ts": "2026-11-20T09:04:00Z"
  }
 ]
