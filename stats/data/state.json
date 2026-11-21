@@ -65,7 +65,7 @@
   "discord": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-21T10:50:35Z"
+   "last_ok": "2026-11-21T11:47:36Z"
   },
   "instagram": {
    "alerted": false,
@@ -78,14 +78,14 @@
   "youtube": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-21T10:50:35Z"
+   "last_ok": "2026-11-21T11:47:36Z"
   },
   "youtube_analytics": {
    "alerted": false,
    "fails": 0
   }
  },
- "last_run": "2026-11-21T10:50:35Z",
+ "last_run": "2026-11-21T11:47:36Z",
  "reposted": "v2-launch",
  "scan_day": "2026-11-21",
  "sent": {
@@ -100,6 +100,7 @@
   "milestone:video:yt:MyaiC3b5-Pw:1000": "2026-11-18T14:42:51Z",
   "milestone:video:yt:Thxs9ZZ0VD8:1000": "2026-11-18T03:23:22Z",
   "milestone:video:yt:Wp2pwWQsNOk:1000": "2026-11-18T03:23:22Z",
+  "milestone:video:yt:vuuPgdXxIWY:1000": "2026-11-21T11:47:36Z",
   "milestone:views:youtube:1000": "2026-11-18T03:23:22Z",
   "milestone:views:youtube:2500": "2026-11-18T03:23:22Z",
   "milestone:views:youtube:5000": "2026-11-21T08:52:32Z",
