@@ -48,13 +48,24 @@
     "part",
     "wait"
    ]
+  },
+  "V04": {
+   "first_posted": "2026-11-21T01:07:48Z",
+   "format": "Gameplay",
+   "title": "A Ghost Ship Appeared in the Storm… New Roblox Pirate Game 👻",
+   "words": [
+    "appeared",
+    "ghost",
+    "ship",
+    "storm"
+   ]
   }
  },
  "health": {
   "discord": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-20T23:49:52Z"
+   "last_ok": "2026-11-21T01:08:36Z"
   },
   "instagram": {
    "alerted": false,
@@ -67,16 +78,16 @@
   "youtube": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-20T23:49:52Z"
+   "last_ok": "2026-11-21T01:08:36Z"
   },
   "youtube_analytics": {
    "alerted": false,
    "fails": 0
   }
  },
- "last_run": "2026-11-20T23:49:52Z",
+ "last_run": "2026-11-21T01:08:36Z",
  "reposted": "v2-launch",
- "scan_day": "2026-11-20",
+ "scan_day": "2026-11-21",
  "sent": {
   "checkin:tt:2026-11-15-cannon-to-the-kraken-cutscene:24": "2026-11-18T12:00:25Z",
   "checkin:yt:MyaiC3b5-Pw:24": "2026-11-19T02:54:36Z",
@@ -95,7 +106,8 @@
   "new:yt:MyaiC3b5-Pw": "2026-11-18T03:23:22Z",
   "new:yt:Thxs9ZZ0VD8": "2026-11-18T03:23:22Z",
   "new:yt:Wp2pwWQsNOk": "2026-11-18T03:23:22Z",
-  "new:yt:hcNvPpxCBxI": "2026-11-18T03:23:22Z"
+  "new:yt:hcNvPpxCBxI": "2026-11-18T03:23:22Z",
+  "new:yt:vuuPgdXxIWY": "2026-11-21T01:08:36Z"
  },
  "tabs": {
   "Instagram Reels": {
@@ -112,7 +124,7 @@
   }
  },
  "trends_cache": {
-  "fetched": "2026-11-20T21:50:16Z",
+  "fetched": "2026-11-21T01:08:36Z",
   "rows": [
    {
     "age_days": 42.0,
@@ -256,6 +268,7 @@
   "yt:MyaiC3b5-Pw": "V03",
   "yt:Thxs9ZZ0VD8": "V00",
   "yt:Wp2pwWQsNOk": "V02",
-  "yt:hcNvPpxCBxI": "V01"
+  "yt:hcNvPpxCBxI": "V01",
+  "yt:vuuPgdXxIWY": "V04"
  }
 }
