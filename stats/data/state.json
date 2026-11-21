@@ -65,7 +65,7 @@
   "discord": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-21T09:49:59Z"
+   "last_ok": "2026-11-21T10:50:35Z"
   },
   "instagram": {
    "alerted": false,
@@ -78,14 +78,14 @@
   "youtube": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-21T09:49:59Z"
+   "last_ok": "2026-11-21T10:50:35Z"
   },
   "youtube_analytics": {
    "alerted": false,
    "fails": 0
   }
  },
- "last_run": "2026-11-21T09:49:59Z",
+ "last_run": "2026-11-21T10:50:35Z",
  "reposted": "v2-launch",
  "scan_day": "2026-11-21",
  "sent": {
