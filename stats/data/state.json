@@ -65,7 +65,7 @@
   "discord": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-22T16:12:36Z"
+   "last_ok": "2026-11-22T22:25:52Z"
   },
   "instagram": {
    "alerted": false,
@@ -78,14 +78,14 @@
   "youtube": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-22T16:12:36Z"
+   "last_ok": "2026-11-22T22:25:52Z"
   },
   "youtube_analytics": {
    "alerted": false,
    "fails": 0
   }
  },
- "last_run": "2026-11-22T16:12:36Z",
+ "last_run": "2026-11-22T22:25:52Z",
  "reposted": "v2-launch",
  "scan_day": "2026-11-22",
  "sent": {
@@ -128,7 +128,7 @@
   }
  },
  "trends_cache": {
-  "fetched": "2026-11-22T16:12:36Z",
+  "fetched": "2026-11-22T22:25:52Z",
   "rows": [
    {
     "age_days": 32.0,
