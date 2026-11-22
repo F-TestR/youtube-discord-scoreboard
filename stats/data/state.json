@@ -65,7 +65,7 @@
   "discord": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-22T00:17:36Z"
+   "last_ok": "2026-11-22T07:57:03Z"
   },
   "instagram": {
    "alerted": false,
@@ -78,22 +78,24 @@
   "youtube": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-22T00:17:36Z"
+   "last_ok": "2026-11-22T07:57:03Z"
   },
   "youtube_analytics": {
    "alerted": false,
    "fails": 0
   }
  },
- "last_run": "2026-11-22T00:17:36Z",
+ "last_run": "2026-11-22T07:57:03Z",
  "reposted": "v2-launch",
  "scan_day": "2026-11-22",
  "sent": {
   "checkin:tt:2026-11-15-cannon-to-the-kraken-cutscene:24": "2026-11-18T12:00:25Z",
   "checkin:yt:MyaiC3b5-Pw:24": "2026-11-19T02:54:36Z",
+  "checkin:yt:Thxs9ZZ0VD8:168": "2026-11-22T07:57:03Z",
   "checkin:yt:Thxs9ZZ0VD8:24": "2026-11-18T03:23:22Z",
   "checkin:yt:Wp2pwWQsNOk:24": "2026-11-18T03:23:22Z",
   "checkin:yt:hcNvPpxCBxI:24": "2026-11-18T03:23:22Z",
+  "checkin:yt:vuuPgdXxIWY:24": "2026-11-22T07:57:03Z",
   "launch:v2-launch": "2026-11-18T14:42:51Z",
   "milestone:followers:discord:10": "2026-11-18T03:23:22Z",
   "milestone:followers:youtube:500": "2026-11-18T03:23:22Z",
@@ -126,139 +128,139 @@
   }
  },
  "trends_cache": {
-  "fetched": "2026-11-22T00:17:36Z",
+  "fetched": "2026-11-22T07:57:03Z",
   "rows": [
    {
-    "age_days": 17.0,
-    "growth": 12.53,
-    "id": "10774725421",
-    "name": "🌎 In This World",
-    "players": 4307.0,
-    "reasons": "players ×12.5 vs last week; forecast: big rise ahead; Shorts taking off (64.5K views/hour)",
-    "score": 77.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10774725421"
-   },
-   {
-    "age_days": 17.0,
-    "growth": 10.57,
-    "id": "10774639404",
-    "name": "Pixel Z",
-    "players": 3708.0,
-    "reasons": "players come back on weekdays; players ×10.6 vs last week; on Roblox's Top Trending + Up-and-Coming",
-    "score": 70.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10774639404"
-   },
-   {
-    "age_days": 13.0,
-    "growth": 12.6,
-    "id": "10775377114",
-    "name": "[🥊] Tumble Dash",
-    "players": 1112.0,
-    "reasons": "players ×12.6 vs last week; forecast: big rise ahead; growth just accelerated",
-    "score": 60.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10775377114"
-   },
-   {
-    "age_days": 31.0,
-    "growth": null,
+    "age_days": 32.0,
+    "growth": 7.76,
     "id": "10772284025",
-    "name": "[⚡ UPD 2] Be The Biggest Streamer",
-    "players": 13148.0,
-    "reasons": "players come back on weekdays; on Roblox's Top Trending + Up-and-Coming; forecast: close to its peak",
-    "score": 56.0,
+    "name": "[🚗 UPD 3] Be The Biggest Streamer",
+    "players": 13480.0,
+    "reasons": "players come back on weekdays; players ×7.8 vs last week; on Roblox's Top Trending + Up-and-Coming",
+    "score": 77.0,
     "sea": false,
     "url": "https://www.roblox.com/games/start?universeId=10772284025"
    },
    {
-    "age_days": 21.0,
-    "growth": 10.94,
-    "id": "10774051115",
-    "name": "Clean The Ballpit! ",
-    "players": 24238.0,
-    "reasons": "players ×10.9 vs last week; players come back on weekdays; on Roblox's Top Trending + Up-and-Coming",
-    "score": 55.0,
+    "age_days": 12.0,
+    "growth": 6.54,
+    "id": "10775759810",
+    "name": "Cast For Fish!",
+    "players": 5512.0,
+    "reasons": "growth just accelerated; players ×6.5 vs last week; forecast: big rise ahead",
+    "score": 52.0,
     "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10774051115"
+    "url": "https://www.roblox.com/games/start?universeId=10775759810"
    },
    {
-    "age_days": 16.0,
-    "growth": 20.59,
+    "age_days": 35.0,
+    "growth": 19.03,
+    "id": "10771804965",
+    "name": " [🔫] Shoot to Steal an Egg",
+    "players": 3651.0,
+    "reasons": "players ×19.0 vs last week; forecast: big rise ahead; charting abroad first (3 countries)",
+    "score": 46.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10771804965"
+   },
+   {
+    "age_days": 12.0,
+    "growth": 30.99,
+    "id": "10775706743",
+    "name": "[🌈] RM + AP",
+    "players": 541.0,
+    "reasons": "players ×31.0 vs last week; forecast: big rise ahead; on Roblox's Up-and-Coming + Trending In Shooter",
+    "score": 46.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10775706743"
+   },
+   {
+    "age_days": 19.0,
+    "growth": 16.37,
+    "id": "10774554401",
+    "name": "(🚨) Prison Tycoon",
+    "players": 9026.0,
+    "reasons": "players ×16.4 vs last week; forecast: big rise ahead; on Roblox's Up-and-Coming + Trending In Simulation",
+    "score": 44.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10774554401"
+   },
+   {
+    "age_days": 17.0,
+    "growth": 8.19,
     "id": "10774759040",
     "name": "Warnetopia: Internet Cafe",
-    "players": 13458.0,
-    "reasons": "players ×20.6 vs last week; forecast: big rise ahead; 98 min played per player",
-    "score": 50.0,
+    "players": 17431.0,
+    "reasons": "players ×8.2 vs last week; forecast: big rise ahead; 131 min played per player",
+    "score": 41.0,
     "sea": false,
     "url": "https://www.roblox.com/games/start?universeId=10774759040"
    },
    {
-    "age_days": 18.0,
-    "growth": 9.76,
-    "id": "10774481913",
-    "name": "+1 Anime Speed",
-    "players": 4044.0,
-    "reasons": "players ×9.8 vs last week; forecast: big rise ahead; charting abroad first (6 countries)",
-    "score": 46.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10774481913"
-   },
-   {
-    "age_days": 19.0,
-    "growth": 25.12,
-    "id": "10774303559",
-    "name": "Fish for Secret Animals!",
-    "players": 18605.0,
-    "reasons": "players ×25.1 vs last week; forecast: big rise ahead; on Roblox's Up-and-Coming",
-    "score": 46.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10774303559"
-   },
-   {
-    "age_days": 20.0,
-    "growth": 49.72,
-    "id": "10774244015",
-    "name": "[⚔️] Kit PVP FFA ",
-    "players": 24015.0,
-    "reasons": "players ×49.7 vs last week; forecast: big rise ahead; on Roblox's Top Trending + Up-and-Coming",
-    "score": 46.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10774244015"
-   },
-   {
-    "age_days": 21.0,
-    "growth": 8.96,
-    "id": "10774066980",
-    "name": "[NEW MAP] Cambria - Creature Survival",
-    "players": 5001.0,
-    "reasons": "players ×9.0 vs last week; forecast: big rise ahead; players come back on weekdays",
-    "score": 45.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10774066980"
-   },
-   {
-    "age_days": 13.0,
-    "growth": 14.96,
+    "age_days": 14.0,
+    "growth": 12.76,
     "id": "10775306547",
     "name": "Ragdoll Gladiator Arena",
-    "players": 6085.0,
-    "reasons": "players ×15.0 vs last week; forecast: big rise ahead; on Roblox's Up-and-Coming",
-    "score": 44.0,
+    "players": 4890.0,
+    "reasons": "players ×12.8 vs last week; forecast: big rise ahead; on Roblox's Top Trending + Up-and-Coming",
+    "score": 41.0,
     "sea": false,
     "url": "https://www.roblox.com/games/start?universeId=10775306547"
    },
    {
-    "age_days": 43.0,
-    "growth": 1.86,
-    "id": "10770052948",
-    "name": "find the boxtens (68)",
-    "players": 782.0,
-    "reasons": "growth just accelerated; forecast: big rise ahead; players ×1.9 vs last week",
-    "score": 44.0,
+    "age_days": 14.0,
+    "growth": 23.21,
+    "id": "10775306701",
+    "name": "Animal Ragdoll",
+    "players": 7557.0,
+    "reasons": "players ×23.2 vs last week; forecast: big rise ahead; on Roblox's Up-and-Coming",
+    "score": 41.0,
     "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10770052948"
+    "url": "https://www.roblox.com/games/start?universeId=10775306701"
+   },
+   {
+    "age_days": 18.0,
+    "growth": 12.67,
+    "id": "10774657974",
+    "name": "Name Them All",
+    "players": 8103.0,
+    "reasons": "players ×12.7 vs last week; forecast: big rise ahead; on Roblox's Top Trending + Up-and-Coming",
+    "score": 41.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10774657974"
+   },
+   {
+    "age_days": 10.0,
+    "growth": 10.23,
+    "id": "10776200249",
+    "name": "[DISASTERS] Ragdoll Destruction 💥",
+    "players": 6407.0,
+    "reasons": "players ×10.2 vs last week; forecast: big rise ahead; charting abroad first (3 countries)",
+    "score": 38.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10776200249"
+   },
+   {
+    "age_days": 37.0,
+    "growth": 15.07,
+    "id": "10771159260",
+    "name": "Krillion 🦐 [UNLIMITED] ",
+    "players": 6618.0,
+    "reasons": "players ×15.1 vs last week; forecast: big rise ahead; on Roblox's Top Trending",
+    "score": 38.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10771159260"
+   },
+   {
+    "age_days": 13.0,
+    "growth": 5.21,
+    "id": "10775482571",
+    "name": "Chase a Storm! [1-4 PLAYER!]",
+    "players": 1960.0,
+    "reasons": "forecast: big rise ahead; players ×5.2 vs last week; studio has had a hit (11.7K peak)",
+    "score": 38.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10775482571"
    }
   ],
   "site": "https://f-testr.github.io/TrendBot/"
