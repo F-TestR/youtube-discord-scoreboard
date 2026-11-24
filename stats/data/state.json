@@ -75,7 +75,7 @@
   "discord": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-24T13:32:51Z"
+   "last_ok": "2026-11-24T23:27:18Z"
   },
   "instagram": {
    "alerted": false,
@@ -88,14 +88,14 @@
   "youtube": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-24T13:32:51Z"
+   "last_ok": "2026-11-24T23:27:18Z"
   },
   "youtube_analytics": {
    "alerted": false,
    "fails": 0
   }
  },
- "last_run": "2026-11-24T13:32:51Z",
+ "last_run": "2026-11-24T23:27:18Z",
  "reposted": "v2-launch",
  "scan_day": "2026-11-24",
  "sent": {
@@ -108,6 +108,7 @@
   "checkin:yt:Wp2pwWQsNOk:24": "2026-11-18T03:23:22Z",
   "checkin:yt:hcNvPpxCBxI:168": "2026-11-24T02:08:43Z",
   "checkin:yt:hcNvPpxCBxI:24": "2026-11-18T03:23:22Z",
+  "checkin:yt:jLs1x83_tkM:24": "2026-11-24T23:27:18Z",
   "checkin:yt:vuuPgdXxIWY:24": "2026-11-22T07:57:03Z",
   "launch:v2-launch": "2026-11-18T14:42:51Z",
   "milestone:followers:discord:10": "2026-11-18T03:23:22Z",
@@ -143,139 +144,139 @@
   }
  },
  "trends_cache": {
-  "fetched": "2026-11-24T13:32:51Z",
+  "fetched": "2026-11-24T23:27:18Z",
   "rows": [
    {
-    "age_days": 33.0,
-    "growth": 8.53,
-    "id": "10772284025",
-    "name": "[⚡️UPD 3] Be The Biggest Streamer",
-    "players": 7111.0,
-    "reasons": "players come back on weekdays; players ×8.5 vs last week; on Roblox's Top Trending + Up-and-Coming",
-    "score": 78.0,
+    "age_days": 31.0,
+    "growth": 5.8,
+    "id": "10772806181",
+    "name": "[UPD] Volleyball: Spike Evolved! 🏐",
+    "players": 4989.0,
+    "reasons": "forecast: big rise ahead; players ×5.8 vs last week; growth just accelerated",
+    "score": 61.0,
     "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10772284025"
+    "url": "https://www.roblox.com/games/start?universeId=10772806181"
    },
    {
-    "age_days": 55.0,
-    "growth": 3.85,
-    "id": "10768625767",
-    "name": "Save the Krusty Krab 🍔",
-    "players": 2653.0,
-    "reasons": "growth just accelerated; players ×3.9 vs last week; charting abroad first (7 countries)",
-    "score": 51.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10768625767"
-   },
-   {
-    "age_days": 22.0,
-    "growth": 11.25,
-    "id": "10774223573",
-    "name": "[COSMETICS] +1 Leviathan Evolution",
-    "players": 2831.0,
-    "reasons": "players ×11.2 vs last week; forecast: big rise ahead; studio has had a hit (6.7K peak)",
-    "score": 49.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10774223573"
-   },
-   {
-    "age_days": 15.0,
-    "growth": 9.45,
-    "id": "10775377114",
-    "name": "[🥊] Tumble Dash",
-    "players": 2352.0,
-    "reasons": "players ×9.5 vs last week; forecast: big rise ahead; on Roblox's Top Trending + Up-and-Coming",
-    "score": 45.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10775377114"
-   },
-   {
-    "age_days": 10.0,
-    "growth": 29.42,
+    "age_days": 11.0,
+    "growth": 26.19,
     "id": "10776436556",
     "name": "Suzy Says! [HORROR]",
-    "players": 8360.0,
-    "reasons": "players ×29.4 vs last week; forecast: big rise ahead; on Roblox's Top Trending + Up-and-Coming",
+    "players": 19144.0,
+    "reasons": "players ×26.2 vs last week; forecast: big rise ahead; on Roblox's Top Trending + Up-and-Coming",
     "score": 43.0,
     "sea": false,
     "url": "https://www.roblox.com/games/start?universeId=10776436556"
    },
    {
-    "age_days": 13.0,
-    "growth": 14.44,
+    "age_days": 14.0,
+    "growth": 16.77,
     "id": "10775759810",
     "name": "Cast For Fish!",
-    "players": 8102.0,
-    "reasons": "players ×14.4 vs last week; forecast: big rise ahead; charting abroad first (2 countries)",
-    "score": 41.0,
+    "players": 9138.0,
+    "reasons": "players ×16.8 vs last week; forecast: big rise ahead; on Roblox's Up-and-Coming",
+    "score": 42.0,
     "sea": false,
     "url": "https://www.roblox.com/games/start?universeId=10775759810"
    },
    {
-    "age_days": 20.0,
-    "growth": 13.66,
-    "id": "10774580855",
-    "name": "She Is Listening.[HORROR]",
-    "players": 712.0,
-    "reasons": "players ×13.7 vs last week; forecast: big rise ahead; on Roblox's Up-and-Coming",
-    "score": 38.0,
+    "age_days": 34.0,
+    "growth": 0.83,
+    "id": "10772284025",
+    "name": "[⚡️UPD 3] Be The Biggest Streamer",
+    "players": 16670.0,
+    "reasons": "players come back on weekdays; on Roblox's Top Trending + Up-and-Coming; buzzing across platforms",
+    "score": 42.0,
     "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10774580855"
+    "url": "https://www.roblox.com/games/start?universeId=10772284025"
+   },
+   {
+    "age_days": 17.0,
+    "growth": 6.18,
+    "id": "10775160561",
+    "name": "My Little Pony Card Opening",
+    "players": 15439.0,
+    "reasons": "forecast: big rise ahead; players ×6.2 vs last week; on Roblox's Top Trending + Up-and-Coming",
+    "score": 40.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10775160561"
+   },
+   {
+    "age_days": 15.0,
+    "growth": 6.3,
+    "id": "10775482571",
+    "name": "Chase a Storm! [1-4 PLAYER!]",
+    "players": 8196.0,
+    "reasons": "forecast: big rise ahead; players ×6.3 vs last week; studio has had a hit (11.8K peak)",
+    "score": 36.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10775482571"
    },
    {
     "age_days": 23.0,
-    "growth": 3.6,
-    "id": "10774051115",
-    "name": "Clean The Ballpit! ",
-    "players": 16727.0,
-    "reasons": "players come back on weekdays; players ×3.6 vs last week; on Roblox's Top Trending + Up-and-Coming",
-    "score": 37.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10774051115"
-   },
-   {
-    "age_days": 14.0,
-    "growth": 14.99,
-    "id": "10775491090",
-    "name": "🌊 Drink the Ocean",
-    "players": 2381.0,
-    "reasons": "players ×15.0 vs last week; forecast: big rise ahead; on Roblox's Top Trending + Up-and-Coming",
-    "score": 36.0,
-    "sea": true,
-    "url": "https://www.roblox.com/games/start?universeId=10775491090"
-   },
-   {
-    "age_days": 31.0,
-    "growth": 10.28,
-    "id": "10772618682",
-    "name": "[🛴Scooters & MTB] BMX LIFE",
-    "players": 2016.0,
-    "reasons": "players ×10.3 vs last week; forecast: big rise ahead; charting abroad first (2 countries)",
+    "growth": 4.15,
+    "id": "10774223573",
+    "name": "[COSMETICS+QOL] +1 Leviathan Evolution",
+    "players": 3795.0,
+    "reasons": "forecast: big rise ahead; players ×4.1 vs last week; studio has had a hit (6.7K peak)",
     "score": 36.0,
     "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10772618682"
-   },
-   {
-    "age_days": 38.0,
-    "growth": 8.49,
-    "id": "10771164027",
-    "name": "[Pro Clubs] StreetSoccer [Career Mode]",
-    "players": 1347.0,
-    "reasons": "players ×8.5 vs last week; forecast: big rise ahead; charting abroad first (2 countries)",
-    "score": 35.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10771164027"
+    "url": "https://www.roblox.com/games/start?universeId=10774223573"
    },
    {
     "age_days": 16.0,
-    "growth": 8.46,
-    "id": "10775218094",
-    "name": "Throw Food For Clowns",
-    "players": 903.0,
-    "reasons": "players ×8.5 vs last week; forecast: big rise ahead; studio has had a hit (73.7K peak)",
+    "growth": 7.84,
+    "id": "10775377114",
+    "name": "[🥊] Tumble Dash",
+    "players": 10941.0,
+    "reasons": "players ×7.8 vs last week; forecast: big rise ahead; on Roblox's Top Trending + Up-and-Coming",
     "score": 34.0,
     "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10775218094"
+    "url": "https://www.roblox.com/games/start?universeId=10775377114"
+   },
+   {
+    "age_days": 56.0,
+    "growth": 3.58,
+    "id": "10768616386",
+    "name": "[W5🌏]+1 Solo Hunter Evolution⚔️",
+    "players": 3390.0,
+    "reasons": "forecast: big rise ahead; players ×3.6 vs last week; charting abroad first (2 countries)",
+    "score": 34.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10768616386"
+   },
+   {
+    "age_days": 20.0,
+    "growth": 3.54,
+    "id": "10774725421",
+    "name": "🌎 In This World",
+    "players": 10898.0,
+    "reasons": "players ×3.5 vs last week; Shorts taking off (4.2K views/hour); YouTube buzz (700.5K views in 48h)",
+    "score": 32.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10774725421"
+   },
+   {
+    "age_days": 12.0,
+    "growth": 9.31,
+    "id": "10776200249",
+    "name": "Ragdoll Destruction 💥",
+    "players": 6207.0,
+    "reasons": "players ×9.3 vs last week; forecast: big rise ahead; on Roblox's Top Trending + Up-and-Coming",
+    "score": 31.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10776200249"
+   },
+   {
+    "age_days": 20.0,
+    "growth": 6.89,
+    "id": "10774676937",
+    "name": "RUN FROM THE DOGS!!",
+    "players": 5241.0,
+    "reasons": "players ×6.9 vs last week; forecast: big rise ahead; charting abroad first (3 countries)",
+    "score": 31.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10774676937"
    }
   ],
   "site": "https://f-testr.github.io/TrendBot/"
