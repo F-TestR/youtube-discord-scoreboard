@@ -1,10 +1,10 @@
 {
  "tt:2026-11-15-cannon-to-the-kraken-cutscene": {
-  "confirmed": "2026-11-23T14:28:24Z",
+  "confirmed": "2026-11-24T02:08:43Z",
   "duration_s": null,
   "first_seen": "2026-11-15T17:28:37Z",
   "format": "Cinematic",
-  "last_seen": "2026-11-23T14:28:24Z",
+  "last_seen": "2026-11-24T02:08:43Z",
   "metrics": {
    "avg_view_s": 10.0,
    "comments": 1.0,
@@ -61,14 +61,14 @@
   "url": "https://www.youtube.com/shorts/G1ODiIrd6Yc"
  },
  "yt:MyaiC3b5-Pw": {
-  "confirmed": "2026-11-23T14:28:24Z",
+  "confirmed": "2026-11-24T02:08:43Z",
   "duration_s": 20,
   "first_seen": "2026-11-18T03:23:22Z",
-  "last_seen": "2026-11-23T14:28:24Z",
+  "last_seen": "2026-11-24T02:08:43Z",
   "metrics": {
    "comments": 3.0,
    "likes": 28.0,
-   "views": 1634.0
+   "views": 1645.0
   },
   "platform": "youtube",
   "posted": "2026-11-18T01:46:37Z",
@@ -79,10 +79,10 @@
   "url": "https://www.youtube.com/shorts/MyaiC3b5-Pw"
  },
  "yt:Thxs9ZZ0VD8": {
-  "confirmed": "2026-11-23T14:28:24Z",
+  "confirmed": "2026-11-24T02:08:43Z",
   "duration_s": 26,
   "first_seen": "2026-11-15T17:28:37Z",
-  "last_seen": "2026-11-23T14:28:24Z",
+  "last_seen": "2026-11-24T02:08:43Z",
   "metrics": {
    "comments": 1.0,
    "likes": 14.0,
@@ -115,14 +115,14 @@
   "url": "https://www.youtube.com/shorts/WCSBS7Qnhqo"
  },
  "yt:Wp2pwWQsNOk": {
-  "confirmed": "2026-11-23T14:28:24Z",
+  "confirmed": "2026-11-24T02:08:43Z",
   "duration_s": 22,
   "first_seen": "2026-11-17T01:24:33Z",
-  "last_seen": "2026-11-23T14:28:24Z",
+  "last_seen": "2026-11-24T02:08:43Z",
   "metrics": {
    "comments": 6.0,
    "likes": 32.0,
-   "views": 1617.0
+   "views": 1632.0
   },
   "platform": "youtube",
   "posted": "2026-11-16T23:14:31Z",
@@ -133,14 +133,14 @@
   "url": "https://www.youtube.com/shorts/Wp2pwWQsNOk"
  },
  "yt:hcNvPpxCBxI": {
-  "confirmed": "2026-11-23T14:28:24Z",
+  "confirmed": "2026-11-24T02:08:43Z",
   "duration_s": 20,
   "first_seen": "2026-11-17T01:24:33Z",
-  "last_seen": "2026-11-23T14:28:24Z",
+  "last_seen": "2026-11-24T02:08:43Z",
   "metrics": {
    "comments": 2.0,
    "likes": 6.0,
-   "views": 163.0
+   "views": 172.0
   },
   "platform": "youtube",
   "posted": "2026-11-16T22:21:03Z",
@@ -149,6 +149,24 @@
   "thumb": "https://i.ytimg.com/vi/hcNvPpxCBxI/maxresdefault.jpg",
   "title": "wait… this is actually ROBLOX?? 😳 (new pirate game)",
   "url": "https://www.youtube.com/shorts/hcNvPpxCBxI"
+ },
+ "yt:jLs1x83_tkM": {
+  "confirmed": "2026-11-24T02:08:43Z",
+  "duration_s": 13,
+  "first_seen": "2026-11-24T02:08:43Z",
+  "last_seen": "2026-11-24T02:08:43Z",
+  "metrics": {
+   "comments": 3.0,
+   "likes": 9.0,
+   "views": 1164.0
+  },
+  "platform": "youtube",
+  "posted": "2026-11-23T17:06:13Z",
+  "source": "api",
+  "status": "live",
+  "thumb": "https://i.ytimg.com/vi/jLs1x83_tkM/maxresdefault.jpg",
+  "title": "what if our roblox pirate game had a pirate token? 🪙🏴‍☠️ comment 1, 2, 3 or 4 👇 #robloxfyp #roblox",
+  "url": "https://www.youtube.com/shorts/jLs1x83_tkM"
  },
  "yt:mgEgzM7NYPE": {
   "confirmed": "2026-11-15T17:28:37Z",
@@ -205,14 +223,14 @@
   "url": "https://www.youtube.com/shorts/q-DOMwfoemw"
  },
  "yt:vuuPgdXxIWY": {
-  "confirmed": "2026-11-23T14:28:24Z",
+  "confirmed": "2026-11-24T02:08:43Z",
   "duration_s": 16,
   "first_seen": "2026-11-21T01:08:36Z",
-  "last_seen": "2026-11-23T14:28:24Z",
+  "last_seen": "2026-11-24T02:08:43Z",
   "metrics": {
    "comments": 3.0,
    "likes": 12.0,
-   "views": 1186.0
+   "views": 1194.0
   },
   "platform": "youtube",
   "posted": "2026-11-21T01:07:48Z",
