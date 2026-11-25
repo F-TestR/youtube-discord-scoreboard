@@ -75,7 +75,7 @@
   "discord": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-24T23:27:18Z"
+   "last_ok": "2026-11-25T08:19:08Z"
   },
   "instagram": {
    "alerted": false,
@@ -88,19 +88,20 @@
   "youtube": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-24T23:27:18Z"
+   "last_ok": "2026-11-25T08:19:08Z"
   },
   "youtube_analytics": {
    "alerted": false,
    "fails": 0
   }
  },
- "last_run": "2026-11-24T23:27:18Z",
+ "last_run": "2026-11-25T08:19:08Z",
  "reposted": "v2-launch",
- "scan_day": "2026-11-24",
+ "scan_day": "2026-11-25",
  "sent": {
   "checkin:tt:2026-11-15-cannon-to-the-kraken-cutscene:168": "2026-11-24T13:32:51Z",
   "checkin:tt:2026-11-15-cannon-to-the-kraken-cutscene:24": "2026-11-18T12:00:25Z",
+  "checkin:yt:MyaiC3b5-Pw:168": "2026-11-25T08:19:08Z",
   "checkin:yt:MyaiC3b5-Pw:24": "2026-11-19T02:54:36Z",
   "checkin:yt:Thxs9ZZ0VD8:168": "2026-11-22T07:57:03Z",
   "checkin:yt:Thxs9ZZ0VD8:24": "2026-11-18T03:23:22Z",
@@ -112,6 +113,7 @@
   "checkin:yt:vuuPgdXxIWY:24": "2026-11-22T07:57:03Z",
   "launch:v2-launch": "2026-11-18T14:42:51Z",
   "milestone:followers:discord:10": "2026-11-18T03:23:22Z",
+  "milestone:followers:discord:25": "2026-11-25T08:19:08Z",
   "milestone:followers:youtube:500": "2026-11-18T03:23:22Z",
   "milestone:video:yt:MyaiC3b5-Pw:1000": "2026-11-18T14:42:51Z",
   "milestone:video:yt:Thxs9ZZ0VD8:1000": "2026-11-18T03:23:22Z",
@@ -144,7 +146,7 @@
   }
  },
  "trends_cache": {
-  "fetched": "2026-11-24T23:27:18Z",
+  "fetched": "2026-11-25T08:19:08Z",
   "rows": [
    {
     "age_days": 31.0,
