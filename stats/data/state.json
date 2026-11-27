@@ -75,7 +75,7 @@
   "discord": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-27T04:56:46Z"
+   "last_ok": "2026-11-27T14:56:20Z"
   },
   "instagram": {
    "alerted": false,
@@ -88,14 +88,14 @@
   "youtube": {
    "alerted": false,
    "fails": 0,
-   "last_ok": "2026-11-27T04:56:46Z"
+   "last_ok": "2026-11-27T14:56:20Z"
   },
   "youtube_analytics": {
    "alerted": false,
    "fails": 0
   }
  },
- "last_run": "2026-11-27T04:56:46Z",
+ "last_run": "2026-11-27T14:56:20Z",
  "reposted": "v2-launch",
  "scan_day": "2026-11-27",
  "sent": {
@@ -146,139 +146,139 @@
   }
  },
  "trends_cache": {
-  "fetched": "2026-11-27T04:56:46Z",
+  "fetched": "2026-11-27T14:56:20Z",
   "rows": [
    {
-    "age_days": 28.0,
-    "growth": 4.49,
-    "id": "10773721222",
-    "name": "Knockout Legends",
-    "players": 636.0,
-    "reasons": "growth just accelerated; forecast: big rise ahead; players ×4.5 vs last week",
-    "score": 92.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10773721222"
-   },
-   {
-    "age_days": 11.0,
-    "growth": 9.2,
-    "id": "10777011514",
-    "name": "Ragdoll Factory",
-    "players": 1330.0,
-    "reasons": "growth just accelerated; players ×9.2 vs last week; forecast: big rise ahead",
-    "score": 82.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10777011514"
-   },
-   {
-    "age_days": 22.0,
-    "growth": 15.97,
+    "age_days": 23.0,
+    "growth": 13.18,
     "id": "10774598960",
     "name": "Wings Fight",
-    "players": 5429.0,
-    "reasons": "players come back on weekdays; players ×16.0 vs last week; forecast: big rise ahead",
-    "score": 82.0,
+    "players": 6554.0,
+    "reasons": "players come back on weekdays; players ×13.2 vs last week; forecast: big rise ahead",
+    "score": 78.0,
     "sea": false,
     "url": "https://www.roblox.com/games/start?universeId=10774598960"
    },
    {
-    "age_days": 43.0,
-    "growth": 2.41,
-    "id": "10770838273",
-    "name": "Shoot an Arrow",
-    "players": 1067.0,
-    "reasons": "growth just accelerated; forecast: big rise ahead; players ×2.4 vs last week",
-    "score": 78.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10770838273"
-   },
-   {
-    "age_days": 25.0,
-    "growth": 16.6,
-    "id": "10774112978",
-    "name": "[🗣️TALKS BACK] Raise a Baby 🍼 Family RP",
-    "players": 4619.0,
-    "reasons": "players come back on weekdays; players ×16.6 vs last week; forecast: big rise ahead",
-    "score": 73.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10774112978"
-   },
-   {
-    "age_days": 2.0,
-    "growth": 103.33,
+    "age_days": 3.0,
+    "growth": 68.5,
     "id": "10778869268",
     "name": "The Great Build",
-    "players": 55418.0,
-    "reasons": "players ×103.3 vs last week; studio has had a hit (505.9K peak); Shorts taking off (3.1K views/hour)",
-    "score": 63.0,
+    "players": 29828.0,
+    "reasons": "players ×68.5 vs last week; studio has had a hit (505.9K peak); Shorts taking off (7.1K views/hour)",
+    "score": 65.0,
     "sea": false,
     "url": "https://www.roblox.com/games/start?universeId=10778869268"
    },
    {
-    "age_days": 22.0,
-    "growth": 11.45,
-    "id": "10774676937",
-    "name": "RUN FROM THE DOGS!!",
-    "players": 5772.0,
-    "reasons": "players ×11.5 vs last week; forecast: big rise ahead; players come back on weekdays",
-    "score": 58.0,
+    "age_days": 26.0,
+    "growth": 11.38,
+    "id": "10774112978",
+    "name": "[🗣️TALKS BACK] Raise a Baby 🍼 Family RP",
+    "players": 8646.0,
+    "reasons": "players come back on weekdays; players ×11.4 vs last week; on Roblox's Up-and-Coming + Trending In Roleplay & Avatar Sim",
+    "score": 63.0,
     "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10774676937"
+    "url": "https://www.roblox.com/games/start?universeId=10774112978"
+   },
+   {
+    "age_days": 10.0,
+    "growth": 29.69,
+    "id": "10777305926",
+    "name": "untitled monkey game",
+    "players": 18554.0,
+    "reasons": "players ×29.7 vs last week; forecast: big rise ahead; on Roblox's Top Trending + Up-and-Coming",
+    "score": 51.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10777305926"
+   },
+   {
+    "age_days": 31.0,
+    "growth": 6.88,
+    "id": "10773205357",
+    "name": "Homeless Simulator",
+    "players": 5010.0,
+    "reasons": "players ×6.9 vs last week; forecast: big rise ahead; players come back on weekdays",
+    "score": 50.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10773205357"
+   },
+   {
+    "age_days": 22.0,
+    "growth": 14.92,
+    "id": "10774753641",
+    "name": "Silent Killer Simulator",
+    "players": 19432.0,
+    "reasons": "players ×14.9 vs last week; forecast: big rise ahead; studio has had a hit (12.3K peak)",
+    "score": 49.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10774753641"
    },
    {
     "age_days": 17.0,
-    "growth": 11.27,
-    "id": "10775482571",
-    "name": "Chase a Storm! [1-4 PLAYER!]",
-    "players": 6961.0,
-    "reasons": "players ×11.3 vs last week; forecast: big rise ahead; studio has had a hit (11.8K peak)",
-    "score": 51.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10775482571"
-   },
-   {
-    "age_days": 23.0,
-    "growth": 1.94,
-    "id": "10774580855",
-    "name": "She Is Listening.[HORROR]",
-    "players": 1929.0,
-    "reasons": "forecast: big rise ahead; Shorts taking off (10.9K views/hour); players ×1.9 vs last week",
-    "score": 49.0,
-    "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10774580855"
-   },
-   {
-    "age_days": 16.0,
-    "growth": 18.47,
+    "growth": 18.61,
     "id": "10775759810",
     "name": "Cast For Fish!",
-    "players": 17816.0,
-    "reasons": "players ×18.5 vs last week; forecast: big rise ahead; on Roblox's Up-and-Coming + Trending In Simulation",
-    "score": 47.0,
+    "players": 21749.0,
+    "reasons": "players ×18.6 vs last week; forecast: big rise ahead; on Roblox's Top Trending + Up-and-Coming",
+    "score": 46.0,
     "sea": false,
     "url": "https://www.roblox.com/games/start?universeId=10775759810"
    },
    {
-    "age_days": 16.0,
-    "growth": 22.81,
+    "age_days": 17.0,
+    "growth": 13.56,
     "id": "10775697826",
     "name": "Illegal Bikes",
-    "players": 9180.0,
-    "reasons": "players ×22.8 vs last week; forecast: big rise ahead; studio has had a hit (12.1K peak)",
-    "score": 44.0,
+    "players": 22870.0,
+    "reasons": "players ×13.6 vs last week; forecast: big rise ahead; studio has had a hit (12.1K peak)",
+    "score": 45.0,
     "sea": false,
     "url": "https://www.roblox.com/games/start?universeId=10775697826"
    },
    {
-    "age_days": 9.0,
-    "growth": 26.86,
-    "id": "10777305926",
-    "name": "untitled monkey game",
-    "players": 14235.0,
-    "reasons": "players ×26.9 vs last week; forecast: big rise ahead; on Roblox's Up-and-Coming + Trending In Survival",
-    "score": 42.0,
+    "age_days": 29.0,
+    "growth": 4.4,
+    "id": "10773721222",
+    "name": "Knockout Legends",
+    "players": 1200.0,
+    "reasons": "forecast: big rise ahead; players ×4.4 vs last week; growth just accelerated",
+    "score": 43.0,
     "sea": false,
-    "url": "https://www.roblox.com/games/start?universeId=10777305926"
+    "url": "https://www.roblox.com/games/start?universeId=10773721222"
+   },
+   {
+    "age_days": 23.0,
+    "growth": 9.09,
+    "id": "10774676937",
+    "name": "RUN FROM THE DOGS!!",
+    "players": 6718.0,
+    "reasons": "players ×9.1 vs last week; players come back on weekdays; forecast: more growth ahead",
+    "score": 41.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10774676937"
+   },
+   {
+    "age_days": 24.0,
+    "growth": 7.41,
+    "id": "10774572124",
+    "name": "Throw Brains For Zombies",
+    "players": 4427.0,
+    "reasons": "players ×7.4 vs last week; forecast: big rise ahead; players come back on weekdays",
+    "score": 39.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10774572124"
+   },
+   {
+    "age_days": 18.0,
+    "growth": 10.9,
+    "id": "10775482571",
+    "name": "Chase a Storm! [1-4 PLAYER!]",
+    "players": 9021.0,
+    "reasons": "players ×10.9 vs last week; forecast: big rise ahead; studio has had a hit (11.8K peak)",
+    "score": 38.0,
+    "sea": false,
+    "url": "https://www.roblox.com/games/start?universeId=10775482571"
    }
   ],
   "site": "https://f-testr.github.io/TrendBot/"
